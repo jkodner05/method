@@ -33,7 +33,8 @@ def write_samples(lemmafreqs, samplesizes, numsamples, outprefix):
 
     print("Making samples")
     lemmalist = []
-    for lemma, freq in lemmafreqs.items():
+    sortedlemmafreqs = sorted(lemmafreqs.items(), key=lambda kv : kv[1], reverse=True)[0:min(len(lemmafreqs), 1500)]
+    for lemma, freq in sortedlemmafreqs:
         lemmalist.extend([lemma]*freq)
 
     for samplenum in range(numsamples):

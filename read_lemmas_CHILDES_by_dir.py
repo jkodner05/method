@@ -8,7 +8,7 @@ exclude_speakers = set(["CHI", "ROS", "DAV", "ARR", "DAN", "JEN"])
 exclude_lemmas = set(["be","not","me","us","you","dog","house","eye","bowl","nose","finger","boot","boat","bicycle","toy","station","zipper","channel","lunch","case","arm","clock","key","spoon","crayon","sock","glove","chicken","shadow","powder","pot","head","market","diaper","toast"])
 
 
-def plot_lemmas_by_numtypes(numtypes_by_lemma, outfname):
+def plot_lemmas_by_numtypes(numtypes_by_lemma, outfname, language):
     numtypes_by_lemma = sorted(numtypes_by_lemma.items(), key=lambda kv: kv[1], reverse=True)
 
     x = []
@@ -27,14 +27,15 @@ def plot_lemmas_by_numtypes(numtypes_by_lemma, outfname):
         patch.set_facecolor("goldenrod")
 
     fontsize = 40
-    ax.set_xlabel('Lemma', fontsize=fontsize)
-    ax.set_ylabel('Attested Inflected Form Type Count', fontsize=fontsize)
-    ax.set_title('Infl Form Type Count by Lemma', fontsize=fontsize)
+    fig.suptitle("CHILDES " + language, fontsize=40)
+    ax.tick_params(labelsize=20)
+    ax.set_xlabel('Ranked Lemmas', fontsize=fontsize)
+    ax.set_ylabel('Infl Form Type Count', fontsize=fontsize)
     plt.savefig("outputs/" + outfname)
     plt.close(fig)
 
 
-def parse_file(fname, freqsbymorph, morphsbytype, lemmasbyfeat, POSset):
+def parse_file(fname, freqsbymorph, morphsbytype, lemmasbyfeat, POSset, language):
 
     textlineregex = re.compile(r"^\*[A-Z][A-Z][A-Z]:")
     morphlineregex = re.compile(r"^%mor:")
@@ -67,6 +68,10 @@ def parse_file(fname, freqsbymorph, morphsbytype, lemmasbyfeat, POSset):
                             continue
                         POS = part.split("|")[0]
                         if not POSset or POS in POSset:
+#                            if "english" in language.lower() and "pl" in feats.lower():
+#                                continue
+#                                print(part, lemma, feats)
+
 #                            print lemma, POS, POSset
                             freqsbymorph[part] += 1
                             morphsbytype[lemma].add(part)
@@ -74,7 +79,7 @@ def parse_file(fname, freqsbymorph, morphsbytype, lemmasbyfeat, POSset):
 #                            morphsbytype[lemma+"_"+POS].add(part)
 
 
-def count_types(basedir, POSset):
+def count_types(basedir, POSset, language):
 
     freqsbymorph = defaultdict(int)
     morphsbytype = defaultdict(lambda : set([]))
@@ -83,7 +88,7 @@ def count_types(basedir, POSset):
     for subdir, dirs, files in os.walk(basedir):
         for fname in files:
             if ".cha" in fname:
-                parse_file(os.path.join(subdir, fname), freqsbymorph, morphsbytype, lemmasbyfeat, POSset)
+                parse_file(os.path.join(subdir, fname), freqsbymorph, morphsbytype, lemmasbyfeat, POSset, language)
                 
     return dict(freqsbymorph), dict(morphsbytype), dict(lemmasbyfeat)
 
@@ -135,6 +140,7 @@ if __name__ == "__main__":
     parser.add_argument("--minfreq", nargs="?", help="min frquency", type=int, default=0)
     parser.add_argument("--rankcutoff", nargs="?", help="rank cutoff", type=int, default=1000000)
     parser.add_argument("--infl", nargs="?", help="all lemmas must attest this inflectional category", type=str, default="")
+    parser.add_argument("--language", nargs="?", type=str, default ="")
     
     args = parser.parse_args()
 
@@ -143,7 +149,7 @@ if __name__ == "__main__":
     if args.pos:
         POSset = set(args.pos)
 
-    freqsbymorph, morphsbytype, lemmasbyfeat = count_types(args.inputdir, POSset)
+    freqsbymorph, morphsbytype, lemmasbyfeat = count_types(args.inputdir, POSset, args.language)
     freqsbytype = combine_freqs_bytype(freqsbymorph, morphsbytype, args.infl.lower())
 
     sortedtypes = sort_types(freqsbytype, args.minfreq)
@@ -158,7 +164,7 @@ if __name__ == "__main__":
     print("Max", max(nummorphsbytype.values()))
     print("Mean", statistics.mean(nummorphsbytype.values()))
     print("Median", statistics.median(nummorphsbytype.values()))
-    plot_lemmas_by_numtypes(nummorphsbytype,basename(args.outfile).replace(".txt",".png"))    
+    plot_lemmas_by_numtypes(nummorphsbytype,basename(args.outfile).replace(".txt",".png"), args.language)    
 
 
     print("# Feats", len(lemmasbyfeat))
