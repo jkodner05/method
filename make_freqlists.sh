@@ -61,3 +61,4 @@ python3 compare_features.py singsang/ outputs/singsang_sampled.txt propertylists
 
 echo ""
 echo "ICELANDIC"
+python3 get_IcePaHC_verbs.py outputs/oldicelandic.txt
