@@ -120,8 +120,10 @@ def main():
                 comparisontype = "inter-non-cds"
                 if genrepair[0] == "cds" and genrepair[1] == "cds":
                     comparisontype = "intra-cds"
+                    continue
                 elif genrepair[0] == genrepair[1]:
                     comparisontype = "intra-non-cds"
+                    continue
                 elif genrepair[0] != genrepair[1] and "cds" in genrepair:
                     comparisontype = "inter-cds"
                 for files, jaccard in similarities.items():

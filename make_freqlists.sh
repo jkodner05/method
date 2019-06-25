@@ -29,10 +29,10 @@
 
 ###################################TESTS
 
-#python3 compare_lexicons.py cocatopnfreqs/ outputs/similarities.txt acad fic mag news spok cds 100,500,1042,12000
+python3 compare_lexicons.py cocatopnfreqs/ outputs/similarities.txt acad fic mag news spok cds 100,500,1042,12000
 
 echo "STRONG VERBS"
-#python3 compare_features.py cocatopnfreqs/ outputs/strongverbs.txt propertylists/strongverbs.txt acad fic mag news spok cds 100,500,1042,12000
+python3 compare_features.py cocatopnfreqs/ outputs/strongverbs.txt propertylists/strongverbs.txt acad fic mag news spok cds 100,500,1042,12000
 
 echo ""
 echo "LATINATE"
@@ -58,3 +58,6 @@ python3 compare_features.py cocasamples/ outputs/irregularverbs_sampled.txt prop
 echo ""
 echo "SINGSANG"
 python3 compare_features.py singsang/ outputs/singsang_sampled.txt propertylists/notsingsang.txt cds adult 100,150,200,250,300,350,400,450,500,550,600,650,700,750,800,850,900,950,1000
+
+echo ""
+echo "ICELANDIC"
