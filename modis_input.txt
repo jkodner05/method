@@ -1,500 +1,920 @@
-1	 segja	 j42 	 {'seg$', 'sagðist', 'segðu', 'sögðum', 'sagðir', '(vbdi sagði', 'sögðust', 'sögðuð', 'sögðu', 'segði', 'sagði', 'sagðir$'}
-S	 koma	 1 	 {'komuð', 'kemur$', 'komust', 'kæmu', 'kæmust', 'kæmist', 'kæmi', 'komst', 'kom', 'komu', 'komum'}
-S	 fara	 1 	 {'færi', 'færir', 'fórs$', 'færu', 'færum', 'fór', 'fóruð', 'fórum', 'fóru'}
-S	 eiga	 42 	 {'ætti', 'ættu', 'átt', 'ættuð', 'ættum', 'áttum', 'áttu', 'ættir', 'átti', 'ættir$'}
-S	 taka	 1 	 {'tæki', 'tókust', 'tókst', 'tækju', 'tóku', 'tók', 'tókum'}
-S	 finna	 42 	 {'fundust', 'fannst', 'fundu', 'fyndist', 'fann', 'finst', 'fyndust', 'fyndi', 'fundum'}
-S	 standa	 1 	 {'stóðu', 'stæðu', 'stæði', 'stóð', 'stóðum', '(vbdi stóð', 'stóðst'}
-S	 sjá	 j0 	 {'sáust', 'sá', 'sæi', 'sáum', 'sæju', 'sér$', 'sást', 'sáu'}
-S	 halda	 1 	 {'héls$', 'hélst', 'héldum', 'hélt', 'héldi', 'héldu', 'héldir'}
-S	 vita	 42 	 {'vissuð', 'veiz$', 'vissu', 'vissir$', 'vissi'}
-S	 láta	 1 	 {'létum', 'lét', 'lést', 'létu', 'lát$', 'lézt', 'léti'}
-1	 horfa	 1 	 {'horfðumst', 'horfðust', 'horfðist', 'horfðu', 'horfði', 'horfðum', 'horfðir$'}
-S	 fá	 0 	 {'fengi', 'fékk', 'fengu', 'fékks$', 'fengum', 'fengust', 'fengir', 'fær$', 'fengju', 'fékkst'}
-1	 þykja	 j42 	 {'þóttust', 'þóttist', 'þóttu', 'þætti', 'þótti'}
-S	 ganga	 1 	 {'gengi', 'gekkst', 'gengum', 'gengu', 'gekst', '$gengust', 'gakk', 'gekk', '$gengjust'}
-S	 líta	 2 	 {'$litu', 'leist', 'leit', 'litu'}
-1	 spyrja	 j42 	 {'spurðu', 'spurðust', 'spurðist', 'spurði', 'spur$', 'spurðir$'}
-S	 liggja	 j42 	 {'lægju', 'lágum', 'lá', 'lægi', 'lágu'}
-S	 sitja	 j42 	 {'sátu', 'sæti', 'sat', 'sátum'}
-1	 leggja	 j42 	 {'legðu', 'lögðum', 'lögðust', 'legðist', 'lögðu', 'lagðist', 'legði', 'lagði'}
-1	 reyna	 423 	 {'reyndum', 'reyndist', 'reyn$', 'reyndi', 'reyndu'}
-2	 ætla	 23 	 {'ætlaði', 'ætluðu', 'ætluðum', 'ætlaðir'}
-S	 bera	 42 	 {'báru', 'bar', 'bæru', 'barst', 'bæri', 'bærust'}
-1	 setja	 j42 	 {'$setti', 'settust', 'settist', 'setti', 'settum', 'settu'}
-1	 virða	 42 	 {'virtist', 'virtust', 'virtu', 'virti'}
-1	 þurfa	 1 	 {'þurftum', 'þurftu', 'þyrftum', 'þurfti', 'þyrftu', 'þyrfti'}
-1	 heyra	 423 	 {'heyrðist', 'heyrði', 'heyr$', 'heyrðu'}
-2	 tala	 1 	 {'talaðist', 'talaði', 'töluðust', 'töluðum', 'töluðu'}
-S	 líða	 2 	 {'leið', 'liði', 'liðu'}
-2	 svara	 1 	 {'svaraði', 'svöruðu'}
-2	 hugsa	 1 	 {'hugsuðu', 'hugsaði', 'hugsaðir'}
-S	 kunna	 1 	 {'kynni', 'kynnum', 'kunni', 'kynnu', 'kunnu', 'kunnum'}
-1	 sýna	 2 	 {'sýndu', 'sýndi', 'sýndist'}
-1	 skilja	 j42 	 {'skildi', 'skildu', 'skildist'}
-1	 ná	 0 	 {'næðum', 'náðum', 'næði', 'náði', 'náðu', 'næðist'}
-S	 búa	 1 	 {'bjuggu', 'byggi', '$bjuggu', 'bjuggust', 'bjóst', 'bjó', 'bjuggum'}
-1	 þekkja	 j42 	 {'þekktum', 'þekti', 'þekkti', 'þektu', 'þekktu'}
-S	 snúa	 1 	 {'snerist', 'snerust', 'sneri', 'sneru'}
-S	 hlæja	 j23 	 {'(vbdi hlógu', 'hló', 'hlógu', 'hlógum'}
-S	 kveða	 42 	 {'kvaddist', 'kvaðst', 'kvæði', '$kvað', 'kváðust', 'kvað', 'kváðu'}
-S	 hljóta	 1 	 {'hlutu', 'hlaut', 'hlytu', 'hlyti', 'hlytist'}
-S	 gefa	 42 	 {'gæfu', 'gáfu', 'gæfist', 'gaf', 'gafs$', 'gafst', 'gáfum', 'gæfi'}
-S	 bíða	 2 	 {'biðu', 'beið', 'biðum', 'biði'}
-S	 bjóða	 1 	 {'bauðs$', 'byðist', 'byði', 'bauðst', 'bauð'}
-S	 biðja	 j42 	 {'bað', 'bæði', 'báðu', 'baðst'}
-1	 renna	 42 	 {'rann', 'renndi', 'rynni', 'runnu'}
-1	 mæla	 23 	 {'mældu', 'mæltist', 'mælti'}
-2	 langa	 1 	 {'langaði'}
-1	 fylgja	 j42 	 {'fylgdust', 'fylgdi', 'fylgdu', 'fylgdist'}
-2	 kalla	 1 	 {'kölluðum', 'kallaði', 'kölluðu', '$kallaði'}
-S	 draga	 1 	 {'dró', 'dróst', 'drægju', 'drógust'}
-S	 reka	 42 	 {'ráku', 'rak', 'ræki', 'rakst', 'rækir'}
-1	 telja	 j42 	 {'teldi', 'töldum', 'taldi', 'teldu', 'töldu'}
-S	 vinna	 42 	 {'unnu', 'ynni', 'vann'}
-S	 heita	 42 	 {'hétu', 'héti', 'hét'}
-1	 vekja	 j42 	 {'vekti', 'vöktu', 'vakti'}
-2	 leita	 42 	 {'leituðum', '$leit', 'leitaðist', 'leituðu', 'leitaði'}
-S	 hefja	 j42 	 {'hófst', 'hóf', 'hófu', 'hófust', '$hófst', 'hæfist'}
-1	 byrja	 j42 	 {'byrjuðu', 'byrjaði', 'byrjuðum'}
-1	 hætta	 23 	 {'hætti', 'hættu'}
-S	 detta	 42 	 {'dytti', 'duttu', 'datt'}
-S	 falla	 1 	 {'félli', 'féll', 'féllu', 'féllst'}
-1	 rétta	 2 	 {'rétti', '$réttaði'}
-2	 vanta	 1 	 {'vantaði'}
-2	 vakna	 1 	 {'vöknuðu', 'vaknaði'}
-S	 slá	 0 	 {'slógum', 'slógu', 'sló'}
-S	 grípa	 2 	 {'gripi', 'greip', 'gripu'}
-S	 bregða	 42 	 {'brygði', 'brá', 'brugðu', 'brugðist'}
-1	 benda	 42 	 {'benti', 'bendum', 'bentu'}
-2	 opna	 1 	 {'opnuðust', 'opnaði', 'opnaðist'}
-1	 bæta	 23 	 {'bættist', 'bætti', 'bættust', 'bætist'}
-1	 brosa	 1 	 {'brosti'}
-1	 lýsa	 2 	 {'lýstu', 'lýsti', '$lýsti'}
-S	 ákveða	 142 	 {'ákvað', 'ákváðum'}
-S	 hverfa	 42 	 {'hurfu', 'hyrfi', 'hvarf', '$hverfðist'}
-1	 missa	 42 	 {'misstu', 'misti', 'missti'}
-S	 lesa	 42 	 {'læsi', 'lestu', 'las'}
-S	 stinga	 42 	 {'stakk', 'styngju', 'stungu', 'stakst', 'stakkst'}
-S	 drekka	 42 	 {'drykki', 'drukkum', 'drukku', 'drakk'}
-1	 fylla	 42 	 {'fylltu', 'fyllti', 'fyltu', 'fylltist', 'fylti'}
-1	 gleyma	 423 	 {'gleymdust', 'gleymdist', 'gleymdi', 'gleymdu', 'gleym$'}
-1	 veita	 42 	 {'veitti'}
-1	 kveðja	 j42 	 {'kvöddust', 'kvaddi', 'kvöddu', 'kvöddumst'}
-1	 sækja	 j23 	 {'sóttu', 'sóttist', 'sæktuð', 'sóttum', 'sótti'}
-S	 ráða	 1 	 {'$réð', 'réði', 'réð', 'réðum', 'réðst', 'réðu'}
-1	 færa	 23 	 {'færðu', 'færði', 'færðust'}
-1	 hitta	 42 	 {'hittu', 'hittumst', 'hittust', 'hitti'}
-S	 hlaupa	 1 	 {'hljóp', 'hlupu'}
-1	 birta	 42 	 {'birtust', 'birti', 'birtist'}
-2	 hvarfla	 1 	 {'hvarflaði'}
-1	 þegja	 j42 	 {'þagði', 'þögðu'}
-S	 fljúga	 1 	 {'flaug', 'flygi', 'flugu'}
-2	 átta	 1 	 {'áttaði'}
-1	 vilja	 j42 	 {'vilduð', 'vildi'}
-1	 kaupa	 1 	 {'keypti', 'keyptir', 'keyptu'}
-S	 lúta	 1 	 {'lyti', 'lutu', 'laut'}
-2	 dansa	 1 	 {'dönsuðu', 'dönsuðum', 'dansaði'}
-2	 spila	 42 	 {'spiluðu', 'spiluðum', 'spiluðuð', 'spilaði'}
-1	 lifa	 42 	 {'lifðu', 'lifðum', 'lifði', '(vbdi lifði'}
-S	 leika	 42 	 {'lékum', 'léki', 'lék', 'léku'}
-1	 þora	 1 	 {'þorði', 'þorðu'}
-1	 lenda	 42 	 {'lenti', 'lentu'}
-2	 hlusta	 1 	 {'hlustaði', 'hlustuðu'}
-1	 skipta	 42 	 {'skiptumst', 'skiptust', 'skipti'}
-1	 senda	 42 	 {'sendum', '$sendi', 'sendi', 'sentist'}
-2	 nota	 1 	 {'notuðu', 'notaði'}
-S	 skína	 2 	 {'skein'}
-S	 skjálfa	 1 	 {'skulfu', 'skalf'}
-1	 minna	 42 	 {'minntist', 'minntu', 'minnti', 'minti', 'mintu'}
-1	 nefna	 42 	 {'nefndir$', 'nefndi'}
-1	 ríkja	 j2 	 {'ríkti'}
-S	 ríða	 2 	 {'riðu', 'reið', 'riði'}
-1	 þola	 1 	 {'þoldi'}
-1	 hringja	 j42 	 {'hringdi'}
-1	 kveikja	 j42 	 {'kveiktu', 'kveikti'}
-1	 mæta	 23 	 {'mætist', 'mættu', 'mætti', 'mættum', 'mættust'}
-1	 hrista	 42 	 {'hristu', 'hristi', 'hristust'}
-1	 henda	 42 	 {'henti', '$henti', '$hentu'}
-1	 duga	 1 	 {'dugðu', 'dygði', 'dugði'}
-1	 enda	 42 	 {'endaði', 'entist'}
-1	 lyfta	 42 	 {'lyftu', 'lyfti', 'lyftist'}
-1	 styðja	 j42 	 {'studdist', 'studdi', 'styddist', 'studdu'}
-1	 hyggja	 j42 	 {'hugðist', 'hugði', 'hygðist'}
-S	 sofa	 1 	 {'svaf'}
-S	 strjúka	 1 	 {'strauk'}
-1	 berja	 j42 	 {'barði', 'barðist'}
-1	 leiða	 42 	 {'leiddust', 'leiddu', 'leiddi'}
-S	 syngja	 j42 	 {'sungum', 'söng'}
-1	 skifta	 42 	 {'skiftu', 'skiftust', 'skifti'}
-S	 hrökkva	 1 	 {'hrökkti', 'hrökk'}
-S	 rífa	 2 	 {'reif', 'rifu'}
-S	 hanga	 1 	 {'héngu', 'hékk'}
-2	 vísa	 2 	 {'vísaði'}
-2	 mynda	 42 	 {'mynduðu', '$myndaðist', 'mynduðum', 'myndaðist', 'myndaði'}
-S	 ljúka	 1 	 {'lauk', '$lukti', 'lyki', 'luku'}
-1	 tengja	 j42 	 {'tengdi', 'tengdist', 'tengdumst'}
-1	 treysta	 423 	 {'treysti'}
-1	 flytja	 j42 	 {'fluttu', 'flyttum', 'fluttust', 'flutti', 'flytti'}
-S	 brjóta	 1 	 {'brutu', 'braut'}
-2	 þakka	 1 	 {'$þökkuðum', 'þakkaði'}
-1	 vara	 1 	 {'varði', 'varaði', 'varaðist', 'varðist', 'vöruðu'}
-2	 kasta	 1 	 {'köstuðu', 'kastaði'}
-1	 flýta	 2 	 {'flýttum', 'flýttu', 'flýtti'}
-2	 gruna	 1 	 {'grunaði'}
-1	 kenna	 42 	 {'kenndi'}
-S	 snerta	 42 	 {'snertu', 'snart', 'snerti'}
-2	 skrifa	 42 	 {'skrifaði'}
-S	 nema	 42 	 {'næmi', 'nam'}
-2	 rifja	 j42 	 {'rifjaðist', 'rifjuðu'}
-1	 þrá	 0 	 {'þráðu', 'þráði'}
-2	 óska	 1 	 {'óskaði', 'óskuðu'}
-2	 varpa	 1 	 {'vörpuðu', 'varpaði', '$vörpuðu', '$varpaði', 'vörpuðum', 'varpaðist'}
-1	 stefna	 42 	 {'stefndum', 'stefndi', 'stefndu'}
-S	 víkja	 j2 	 {'vikju', 'vék'}
-2	 þagna	 1 	 {'þagnaði', 'þögnuðu'}
-S	 súpa	 1 	 {'supu', 'saup'}
-S	 stíga	 2 	 {'steig', 'sté', 'stigu', 'stigi'}
-1	 læra	 23 	 {'lærði', 'lærðu', 'lær$'}
-S	 skjóta	 1 	 {'skaut', 'skutu', 'skaust', 'skutust'}
-S	 gráta	 1 	 {'grétu', 'grét'}
-1	 klæða	 23 	 {'klæddu', 'klæddist', 'klæddi'}
-2	 skoða	 1 	 {'skoðaði'}
-S	 aka	 1 	 {'ók', 'óku'}
-2	 reika	 42 	 {'reikaði'}
-S	 njóta	 1 	 {'nyti', 'naut', 'nutu'}
-1	 glotta	 1 	 {'glotti', 'glottu'}
-1	 kyssa	 42 	 {'kyssti'}
-2	 laga	 1 	 {'lagaðist', 'lagaðir', 'lagaði'}
-2	 stafa	 1 	 {'stöfuðu', 'stafaði'}
-1	 frétta	 2 	 {'frétti', 'fréttist', 'fréttu'}
-S	 deyja	 j423 	 {'dæju', 'dóu', 'dó'}
-1	 trúa	 1 	 {'trúði', 'tryði', 'tryðu'}
-S	 kjósa	 1 	 {'kysi', 'kusu', 'kaus'}
-2	 sofna	 1 	 {'sofnuðu', 'sofnaði'}
-1	 ryðja	 j42 	 {'ruddi', 'ruddumst', 'ruddu', 'ruddist'}
-1	 leyna	 423 	 {'leyndi', 'leyndust', 'leyndist'}
-S	 stökkva	 1 	 {'stökk'}
-S	 springa	 42 	 {'spryngi', 'sprakk', 'sprungum'}
-2	 hrópa	 1 	 {'hrópaði'}
-1	 breiða	 42 	 {'breiddi', 'breiddum'}
-S	 valda	 1 	 {'olli', 'ollu'}
-1	 stara	 1 	 {'starði', 'störðu'}
-1	 blasa	 1 	 {'blasti'}
-1	 hvetja	 j42 	 {'hvatti'}
-S	 spretta	 42 	 {'sprettu', 'spruttu', 'spratt'}
-1	 hleypa	 423 	 {'hleypti'}
-1	 streyma	 423 	 {'streymdi', 'streymdu'}
-2	 líka	 2 	 {'líkaði'}
-S	 rísa	 2 	 {'risu', 'risi', 'reis'}
-1	 heimta	 42 	 {'heimtaði', 'heimtuðu'}
-2	 reikna	 42 	 {'reiknaði'}
-2	 titra	 42 	 {'(vbdi titraði', 'titraði', 'titruðu'}
-1	 létta	 2 	 {'létti'}
-2	 roðna	 1 	 {'roðnaði'}
-1	 herða	 42 	 {'herti', 'hertu'}
-1	 leyfa	 423 	 {'leyfðu', 'leyfði'}
-S	 fela	 42 	 {'fólst', 'fól'}
-2	 hjálpa	 1 	 {'hjálpuðu', 'hjálpaði'}
-S	 rjúka	 1 	 {'rauk', 'ryki'}
-1	 þeyta	 423 	 {'þeytti'}
-2	 lofa	 1 	 {'lofaðir', 'lofaði'}
-1	 skorta	 1 	 {'skorti'}
-2	 tapa	 1 	 {'tapaði', 'töpuðust', 'töpuðu'}
-1	 skýra	 2 	 {'$skýrði', 'skýrðist', 'skýrðu', 'skýrði'}
-2	 tauta	 1 	 {'tautaði'}
-S	 auka	 1 	 {'jók'}
-1	 beita	 42 	 {'beitti', 'beittu'}
-S	 drepa	 42 	 {'drápu', 'drap'}
-1	 þylja	 j42 	 {'þuldi', 'þuldu'}
-1	 neyða	 423 	 {'neyddist', 'neyddi'}
-S	 geta	 42 	 {'gátu', 'gat'}
-1	 leysa	 423 	 {'leysti', 'leystist', 'leystu'}
-1	 ræskja	 j23 	 {'ræskti'}
-1	 skynja	 j42 	 {'skynjaði'}
-1	 vefja	 j42 	 {'vafði', 'vöfðu'}
-2	 góla	 1 	 {'góluðu', 'gólaði'}
-1	 ýta	 2 	 {'ýttu', 'ýtti'}
-S	 blása	 1 	 {'blésu', 'blés'}
-1	 greiða	 42 	 {'$greiddi', 'greiddi', 'greiðist'}
-S	 troða	 1 	 {'tróð'}
-2	 hljóma	 1 	 {'hljómuðu', 'hljómaði'}
-1	 hvíla	 2 	 {'hvíldi'}
-2	 elda	 42 	 {'elduðum', 'eldaði', 'eldi'}
-1	 hreyfa	 423 	 {'hreyfði'}
-1	 kynna	 42 	 {'kynntumst', '$kynnti', 'kynnti'}
-1	 kreista	 42 	 {'kreisti'}
-1	 fletta	 42 	 {'fletti'}
-1	 líkja	 j2 	 {'líktist'}
-S	 brenna	 42 	 {'brann', 'brendu'}
-S	 bíta	 2 	 {'beit'}
-1	 eyða	 423 	 {'eyddi'}
-1	 hrynja	 j42 	 {'hryndi', 'hrundu'}
-S	 skríða	 2 	 {'skriðu', 'skreið'}
-2	 tákna	 1 	 {'táknaði'}
-1	 smeygja	 j423 	 {'smeygði'}
-2	 flögra	 1 	 {'flögraði', 'flögruðu'}
-S	 skreppa	 42 	 {'skryppir', 'skrapp', 'skruppu'}
-2	 hóta	 1 	 {'hótaði', 'hótuðu'}
-S	 svífa	 2 	 {'svifu', 'sveif'}
-2	 vona	 1 	 {'vonaði', 'vonuðu'}
-1	 gnæfa	 23 	 {'gnæfðu', 'gnæfði', '$gnæfði'}
-2	 halla	 1 	 {'hallaðist', 'hallaði'}
-2	 stunda	 1 	 {'stundaði', 'stunduðu'}
-2	 hika	 42 	 {'hikaði', 'hikuðu'}
-1	 gæta	 23 	 {'gætti'}
-1	 hirða	 42 	 {'hirti', 'hirtu'}
-1	 byggja	 j42 	 {'byggir', 'byggðist', 'bygðu'}
-S	 vinda	 42 	 {'undu', 'vatt'}
-1	 skemmta	 42 	 {'skemmtu', 'skemmti'}
-2	 snara	 1 	 {'snöruðu', 'snaraðist'}
-1	 fæða	 23 	 {'fæddist', 'fæddust', 'fæddi'}
-2	 loka	 1 	 {'lokaði', 'lokaðist', 'lokuðu'}
-S	 velta	 42 	 {'(vbds ylti', 'veltist', 'valt'}
-1	 dá	 0 	 {'dáðust', 'dáði', 'dáðist'}
-2	 losa	 1 	 {'losaði', 'losaðist', 'losuðu'}
-2	 kvarta	 1 	 {'kvörtuðu', 'kvartaði'}
-S	 þjóta	 1 	 {'þaut'}
-1	 festa	 42 	 {'festi'}
-S	 hrjóta	 1 	 {'hraut', 'hrutu'}
-2	 kinka	 42 	 {'kinkaði', 'kinkuðu'}
-2	 sakna	 1 	 {'saknaði', 'söknuðu'}
-2	 hata	 1 	 {'hötuðu', 'hataði'}
-2	 ítreka	 42 	 {'ítrekaði'}
-2	 rugla	 1 	 {'ruglaðist', 'rugluðu'}
-2	 hreinsa	 42 	 {'hreinsaði'}
-S	 vaxa	 1 	 {'uxu', 'óx'}
-S	 vega	 42 	 {'vó', '(vbdi vó', '$vegaði'}
-S	 fljóta	 1 	 {'flutu', 'flaut'}
-S	 skafa	 1 	 {'skóf', 'skófu'}
-2	 hljóða	 1 	 {'hljóðaði'}
-2	 ranka	 1 	 {'rankaði'}
-S	 sleppa	 42 	 {'sleppti', 'slepptu', 'slepti'}
-S	 stela	 42 	 {'stælu', 'stal'}
-2	 humma	 1 	 {'hummaði'}
-2	 hlykkja	 j42 	 {'hlykkjaði', 'hlykkjaðist', 'hlykkjandist'}
-2	 snuðra	 1 	 {'snuðraði', 'snuðruðu'}
-1	 dvelja	 j42 	 {'dvaldist', 'dvöldust', 'dveldi'}
-1	 rölta	 1 	 {'rölti', 'röltu'}
-1	 hengja	 j42 	 {'hengdi'}
-2	 strengja	 j42 	 {'strengduð', 'strengdi'}
-2	 geisa	 42 	 {'geisuðu', 'geisaði'}
-1	 græða	 23 	 {'græddist', 'græddu', 'græddi'}
-S	 svíða	 2 	 {'sviði', 'sveið'}
-1	 lemja	 j42 	 {'lamdi'}
-2	 viðra	 42 	 {'viðraði'}
-1	 keyra	 423 	 {'keyrði'}
-2	 orða	 1 	 {'orðaði'}
-1	 ræða	 23 	 {'ræddi', 'ræddum'}
-2	 ganta	 1 	 {'gantaðist'}
-2	 þyrla	 42 	 {'þyrlaðist', 'þyrlaði'}
-S	 álíta	 12 	 {'áleit'}
-2	 kveinka	 42 	 {'kveinkaði'}
-2	 klifra	 42 	 {'klifruðu', 'klifraði'}
-1	 skella	 42 	 {'skellti'}
-2	 nudda	 1 	 {'nuddaði', 'nudduðu'}
-1	 styrka	 42 	 {'styrkti'}
-2	 geispa	 42 	 {'geispaði'}
-2	 þurrka	 1 	 {'þurrkaði'}
-S	 róa	 1 	 {'róaðist', 'róaði'}
-2	 glaðna	 1 	 {'glaðnaði'}
-2	 elska	 42 	 {'elskuðumst', 'elskaði', 'elskuðum'}
-2	 safna	 1 	 {'söfnuðust', 'safnaði'}
-1	 teygja	 j423 	 {'teygði', 'teygðu'}
-1	 rýna	 2 	 {'rýndi', 'rýndu'}
-2	 skila	 42 	 {'skiluðu', 'skilaði'}
-1	 krefja	 j42 	 {'krafði', 'krafðist'}
-S	 sjóða	 1 	 {'(vbdi sauð', 'sauð'}
-2	 eigna	 42 	 {'eignaðist'}
-2	 stama	 1 	 {'stamaði'}
-S	 binda	 42 	 {'batt'}
-2	 loga	 1 	 {'logaði'}
-2	 mála	 1 	 {'málaði'}
-1	 nenna	 42 	 {'nenti', 'nennti', 'nentu'}
-1	 svæfa	 23 	 {'svæfi'}
-2	 umla	 1 	 {'umlaði'}
-1	 selja	 j42 	 {'seldi'}
-1	 æpa	 23 	 {'æptu', 'æpti'}
-S	 éta	 2 	 {'át'}
-1	 breyta	 423 	 {'breyttu', 'breyttist', 'breytti'}
-2	 lokka	 1 	 {'lokkaði'}
-2	 bursta	 1 	 {'burstaði', 'burstuðu'}
-2	 klappa	 1 	 {'klöppuðu', 'klappaði'}
-1	 tísta	 2 	 {'tístu'}
-1	 hella	 42 	 {'hellti'}
-1	 dreyma	 423 	 {'dreymdi'}
-2	 henta	 42 	 {'hentust', 'hentaði'}
-2	 skipa	 42 	 {'skipaði'}
-2	 blikka	 42 	 {'blikkaði'}
-1	 læsa	 23 	 {'læsti'}
-S	 vella	 42 	 {'vall'}
-2	 móta	 1 	 {'mótaðist', 'mótuðust'}
-1	 hylja	 j42 	 {'hylti', 'huldi'}
-2	 smokra	 1 	 {'smokraði'}
-S	 verpa	 42 	 {'varp'}
-S	 spinna	 42 	 {'spann'}
-2	 rofna	 1 	 {'rofnaði'}
-S	 blanda	 1 	 {'blandaðist'}
-2	 klóra	 1 	 {'klóraði'}
-1	 byrgja	 j42 	 {'byrgði', 'byrgðu'}
-2	 aftra	 1 	 {'aftraði'}
-2	 furða	 1 	 {'furðaði', 'furðuðu'}
-1	 bylja	 j42 	 {'bylti', 'buldu'}
-1	 kippa	 42 	 {'kippti'}
-1	 þreyta	 423 	 {'þreytti'}
-1	 kúra	 1 	 {'kúrði'}
-1	 elta	 42 	 {'eltum', 'elti'}
-2	 þorna	 1 	 {'þornaði', 'þornuðu'}
-2	 gutla	 1 	 {'gutlaði'}
-S	 gjalla	 1 	 {'gall'}
-2	 varða	 1 	 {'varðaði'}
-2	 luma	 1 	 {'lumaði'}
-2	 hósta	 1 	 {'hóstaði'}
-2	 sveima	 42 	 {'sveimaði'}
-2	 faðma	 1 	 {'faðmaði'}
-2	 galdra	 1 	 {'galdraði'}
-1	 leiðrétta	 42 	 {'leiðrétti'}
-2	 vökna	 1 	 {'vöknaði'}
-1	 loða	 1 	 {'loddi'}
-S	 þiggja	 j42 	 {'þáði'}
-2	 hrifsa	 42 	 {'hrifsaði'}
-2	 muna	 1 	 {'munaði'}
-S	 hrífa	 2 	 {'hreif', 'hrifu'}
-2	 staldra	 1 	 {'staldraði', 'stöldruðu'}
-1	 syrgja	 j42 	 {'syrgði'}
-2	 mata	 1 	 {'mataði', 'mötuðumst'}
-S	 skalla	 1 	 {'skall'}
-2	 öskra	 1 	 {'öskraði'}
-2	 sópa	 1 	 {'sópaði'}
-S	 skera	 42 	 {'skar', 'skarst'}
-2	 skamma	 1 	 {'skammaðist'}
-1	 dæsa	 23 	 {'dæsti', 'dæstu'}
-1	 meina	 42 	 {'meinuðu', 'meinti'}
-2	 varna	 1 	 {'varnaði'}
-2	 gliðna	 42 	 {'gliðnaði'}
-1	 rymja	 j42 	 {'rumdu', 'rumdi'}
-1	 skyggja	 j42 	 {'skyggði', 'skygði'}
-1	 slútta	 1 	 {'slúttu', 'slútti'}
-1	 drynja	 j42 	 {'drundi'}
-1	 snæða	 23 	 {'snæddu', 'snæddum'}
-1	 fullyrða	 142 	 {'fullyrti'}
-1	 glíma	 2 	 {'glímdi'}
-2	 haga	 1 	 {'hagaði'}
-2	 lifna	 42 	 {'lifnaði'}
-2	 þroska	 1 	 {'þroskaðist'}
-1	 velja	 j42 	 {'völdu', 'valdi'}
-2	 forða	 1 	 {'forðaði'}
-2	 mora	 1 	 {'moraði'}
-2	 blaka	 1 	 {'blakaði', 'blökuðu'}
-1	 tína	 2 	 {'tíndi'}
-1	 dreifa	 42 	 {'dreifðu', 'dreifði'}
-2	 hrapa	 1 	 {'hrapaði', 'hröpuðu'}
-2	 iða	 42 	 {'iðaði'}
-1	 beina	 42 	 {'beindist'}
-S	 kvíða	 2 	 {'kveið'}
-1	 bræða	 23 	 {'bræddi'}
-2	 þurka	 1 	 {'þurkaði'}
-1	 spenna	 42 	 {'spennti'}
-2	 stöðva	 1 	 {'stöðvaðist'}
-2	 kosta	 1 	 {'kostuðu', 'kostaði'}
-2	 ama	 1 	 {'amaði'}
-2	 þjóna	 1 	 {'þjónaði'}
-1	 fleygja	 j423 	 {'fleygði'}
-1	 einsetja	 j42 	 {'einsetti'}
-2	 stikla	 42 	 {'stiklaði'}
-2	 hátta	 1 	 {'háttaði'}
-2	 glamra	 1 	 {'glamraði'}
-1	 gaumgæfa	 123 	 {'gaumgæfði'}
-2	 bragða	 1 	 {'bragðaði'}
-1	 gleypa	 423 	 {'gleypti', 'gleyptu'}
-2	 söðla	 1 	 {'söðlaði'}
-2	 bráðna	 1 	 {'bráðnaði', 'bráðnuðu'}
-2	 gjóa	 1 	 {'gjóaði'}
-S	 kljúfa	 1 	 {'klauf'}
-1	 skyrpa	 42 	 {'skyrpti', '(vbdi skyrpti'}
-1	 tæma	 23 	 {'tæmdi', 'tæmdist'}
-2	 kitla	 42 	 {'kitlaði'}
-2	 minnka	 42 	 {'minkuðu'}
-1	 hvæsa	 23 	 {'hvæsti'}
-1	 reyta	 423 	 {'reytti', 'reyttist'}
-S	 genga	 42 	 {'gengust'}
-S	 verða	 42 	 {'yrði', 'urðu'}
-2	 grána	 1 	 {'gránaði'}
-1	 bræla	 23 	 {'brældi'}
-S	 þrífa	 2 	 {'þreif'}
-1	 lafa	 1 	 {'lafði'}
-2	 muldra	 1 	 {'muldraði'}
-S	 bresta	 42 	 {'brast'}
-1	 stynja	 j42 	 {'stundi'}
-S	 blóta	 1 	 {'blótaði'}
-2	 þoka	 1 	 {'þokaði', 'þokuðu'}
-2	 glitra	 42 	 {'glitraði'}
-2	 sigra	 42 	 {'sigraði'}
-1	 mótmæla	 123 	 {'mótmæltu', 'mótmælti'}
-1	 bæra	 23 	 {'bærðist', 'bærðust'}
-1	 hlífa	 2 	 {'hlífði'}
-2	 spjalla	 1 	 {'spjallaði', 'spjölluðu'}
-2	 veifa	 42 	 {'veifaði'}
-1	 rekja	 j42 	 {'röktum'}
-2	 stofna	 1 	 {'stofnuðu'}
-1	 teyma	 423 	 {'teymdi'}
-1	 gretta	 42 	 {'gretti'}
-2	 skapa	 1 	 {'skóp', 'skapaði'}
-1	 híma	 2 	 {'hímdum', 'hímdu'}
-1	 drýga	 2 	 {'drýgði'}
-2	 rugga	 1 	 {'ruggaði'}
-1	 flökta	 1 	 {'flökti'}
-1	 smyrja	 j42 	 {'smurði'}
-1	 þýða	 2 	 {'þýddi'}
-1	 eira	 42 	 {'eirði'}
-2	 hjóla	 1 	 {'hjólaði'}
-1	 grúfa	 1 	 {'grúfði'}
-1	 þrýsta	 2 	 {'þrýsti'}
-2	 stansa	 1 	 {'stansaði', 'stönsuðu'}
-2	 kanna	 1 	 {'kannaðist'}
-1	 hvá	 0 	 {'hváði'}
-2	 prédika	 42 	 {'prédikuðuð', 'prédikaði'}
-2	 sparka	 1 	 {'sparkaði'}
-2	 heilsa	 42 	 {'heilsaði'}
-2	 handsala	 1 	 {'handsöluðu', 'handsöluðum'}
-1	 hlýða	 2 	 {'hlýddu'}
-2	 grugga	 1 	 {'gruggaði'}
-1	 dynja	 j42 	 {'dyndu', 'dyndi'}
-2	 strunsa	 1 	 {'strunsaði'}
-1	 una	 1 	 {'yndi'}
-S	 sá	 0 	 {'sáði'}
-2	 sanna	 1 	 {'sannaðist'}
-1	 kíma	 2 	 {'kímdi'}
-1	 flýja	 j2 	 {'flýði', 'flúði'}
-2	 þramma	 1 	 {'þrammaði'}
-S	 merkja	 j42 	 {'merkti'}
-2	 baða	 1 	 {'böðuðu', 'baðaði'}
-S	 höggva	 1 	 {'hjó'}
-S	 sökkva	 1 	 {'sökkti', 'sukku'}
-2	 marséra	 12 	 {'marséraði'}
-2	 ryksuga	 142 	 {'ryksugaði'}
-2	 niða	 42 	 {'niðaði'}
-2	 dofna	 1 	 {'dofnaði', 'dofnuðu'}
-1	 gleðja	 j42 	 {'glöddust', 'gladdi'}
-2	 banda	 1 	 {'bandaði'}
-1	 flykkja	 j42 	 {'flykktust'}
-2	 glampa	 1 	 {'glömpuðu', 'glampaði'}
-1	 neita	 42 	 {'neitaði'}
-2	 banka	 1 	 {'bankaði'}
-1	 misheyra	 423 	 {'misheyrðist'}
-2	 blunda	 1 	 {'blundaði', 'blunduðum'}
-1	 sannfæra	 123 	 {'sannfærðist', 'sannfærumst'}
-1	 roðfletta	 142 	 {'roðflettum'}
-2	 buna	 1 	 {'bunaði'}
-2	 tifa	 42 	 {'tifaði'}
-2	 vinka	 42 	 {'vinkaði'}
-2	 raula	 1 	 {'raulaði'}
-2	 romsa	 1 	 {'romsaði'}
-2	 skíðloga	 12 	 {'skíðlogaði'}
-2	 smakka	 1 	 {'smakkaði'}
-2	 titla	 42 	 {'titlaði'}
-1	 þekja	 j42 	 {'þakti'}
-1	 klúka	 1 	 {'klúkti'}
-2	 túlka	 1 	 {'túlkaði'}
-1	 skeytta	 423 	 {'skeytti'}
-1	 meiða	 42 	 {'meiddi'}
+425 	 1	 segja	 j24 	 {'(vbdi sagði', 'sagðir', 'sögðu', 'sagði', 'sagðist', 'seg$', 'sögðust', 'segðu', 'sagðir$', 'sögðuð', 'segði', 'sögðum'}
+402 	 S	 koma	 1 	 {'komust', 'kæmu', 'kæmi', 'kom', 'komu', 'kemur$', 'kæmust', 'kæmist', 'komuð', 'komum', 'komst'}
+343 	 S	 fara	 1 	 {'fór', 'færu', 'færi', 'fórs$', 'færir', 'fóru', 'fórum', 'fóruð', 'færum'}
+264 	 S	 eiga	 24 	 {'ættir', 'ættir$', 'ætti', 'ættuð', 'áttum', 'átt', 'ættum', 'ættu', 'átti', 'áttu'}
+228 	 S	 taka	 1 	 {'tók', 'tækju', 'tókust', 'tæki', 'tóku', 'tókst', 'tókum'}
+202 	 S	 finna	 24 	 {'fann', 'fyndi', 'fyndist', 'fundum', 'fundu', 'fannst', 'fyndust', 'fundust', 'finst'}
+157 	 S	 standa	 1 	 {'stóðst', 'stóðu', 'stæði', 'stæðu', '(vbdi stóð', 'stóð', 'stóðum'}
+142 	 S	 sjá	 0j 	 {'sá', 'sást', 'sáum', 'sáust', 'sæi', 'sáu', 'sér$', 'sæju'}
+127 	 S	 halda	 1 	 {'héldum', 'héldu', 'hélst', 'héldir', 'hélt', 'héls$', 'héldi'}
+110 	 S	 vita	 24 	 {'vissi', 'veiz$', 'vissuð', 'vissir$', 'vissu'}
+98 	 S	 láta	 1 	 {'lát$', 'létum', 'lét', 'lést', 'létu', 'léti', 'lézt'}
+93 	 1	 horfa	 1 	 {'horfðust', 'horfði', 'horfðum', 'horfðir$', 'horfðu', 'horfðist', 'horfðumst'}
+92 	 S	 fá	 0 	 {'fengju', 'fengust', 'fékks$', 'fengi', 'fengir', 'fékkst', 'fær$', 'fengum', 'fengu', 'fékk'}
+92 	 1	 þykja	 j24 	 {'þætti', 'þóttist', 'þótti', 'þóttust', 'þóttu'}
+90 	 S	 ganga	 1 	 {'$gengust', 'gekk', 'gekst', 'gengum', 'gakk', '$gengjust', 'gekkst', 'gengu', 'gengi'}
+89 	 S	 líta	 2 	 {'litu', 'leist', '$litu', 'leit'}
+86 	 1	 spyrja	 j24 	 {'spurðist', 'spurðir$', 'spurðu', 'spurðust', 'spur$', 'spurði'}
+78 	 S	 liggja	 j24 	 {'lágum', 'lægju', 'lægi', 'lágu', 'lá'}
+72 	 S	 sitja	 j24 	 {'sátu', 'sátum', 'sæti', 'sat'}
+72 	 1	 leggja	 j24 	 {'lögðust', 'legðist', 'legðu', 'legði', 'lögðum', 'lagði', 'lögðu', 'lagðist'}
+69 	 1	 reyna	 243 	 {'reyndum', 'reyndist', 'reyndi', 'reyn$', 'reyndu'}
+66 	 S	 bera	 24 	 {'báru', 'bæru', 'bærust', 'barst', 'bæri', 'bar'}
+66 	 2	 ætla	 23 	 {'ætluðum', 'ætlaði', 'ætluðu', 'ætlaðir'}
+61 	 1	 setja	 j24 	 {'$setti', 'settust', 'settum', 'settu', 'setti', 'settist'}
+60 	 1	 virða	 24 	 {'virtust', 'virtu', 'virtist', 'virti'}
+60 	 1	 þurfa	 1 	 {'þyrftum', 'þurftum', 'þyrftu', 'þurfti', 'þyrfti', 'þurftu'}
+59 	 1	 heyra	 243 	 {'heyr$', 'heyrði', 'heyrðist', 'heyrðu'}
+54 	 2	 tala	 1 	 {'töluðu', 'töluðum', 'talaðist', 'talaði', 'töluðust'}
+47 	 S	 líða	 2 	 {'leið', 'liðu', 'liði'}
+45 	 2	 svara	 1 	 {'svöruðu', 'svaraði'}
+45 	 2	 hugsa	 1 	 {'hugsuðu', 'hugsaðir', 'hugsaði'}
+43 	 S	 kunna	 1 	 {'kynnu', 'kunnu', 'kunnum', 'kynnum', 'kunni', 'kynni'}
+42 	 1	 sýna	 2 	 {'sýndu', 'sýndi', 'sýndist'}
+41 	 1	 skilja	 j24 	 {'skildist', 'skildu', 'skildi'}
+39 	 1	 ná	 0 	 {'náði', 'náðu', 'næðum', 'náðum', 'næði', 'næðist'}
+39 	 S	 búa	 1 	 {'bjuggust', 'bjóst', 'byggi', '$bjuggu', 'bjuggu', 'bjó', 'bjuggum'}
+38 	 1	 þekkja	 j24 	 {'þekktu', 'þekti', 'þekktum', 'þektu', 'þekkti'}
+37 	 S	 snúa	 1 	 {'sneru', 'snerist', 'sneri', 'snerust'}
+37 	 S	 hlæja	 j23 	 {'(vbdi hlógu', 'hlógum', 'hló', 'hlógu'}
+35 	 S	 gefa	 24 	 {'gæfist', 'gáfu', 'gafs$', 'gáfum', 'gæfu', 'gæfi', 'gafst', 'gaf'}
+35 	 S	 kveða	 24 	 {'kváðu', 'kvæði', '$kvað', 'kváðust', 'kvaddist', 'kvað', 'kvaðst'}
+35 	 S	 hljóta	 1 	 {'hlutu', 'hlytist', 'hlytu', 'hlyti', 'hlaut'}
+34 	 S	 bíða	 2 	 {'beið', 'biði', 'biðum', 'biðu'}
+32 	 S	 bjóða	 1 	 {'bauðs$', 'byðist', 'bauðst', 'byði', 'bauð'}
+29 	 1	 renna	 24 	 {'renndi', 'rann', 'runnu', 'rynni'}
+29 	 S	 biðja	 j24 	 {'báðu', 'bað', 'bæði', 'baðst'}
+28 	 2	 langa	 1 	 {'langaði'}
+28 	 1	 mæla	 23 	 {'mæltist', 'mælti', 'mældu'}
+27 	 2	 kalla	 1 	 {'kölluðu', '$kallaði', 'kallaði', 'kölluðum'}
+27 	 1	 fylgja	 j24 	 {'fylgdust', 'fylgdi', 'fylgdist', 'fylgdu'}
+26 	 1	 telja	 j24 	 {'töldu', 'teldu', 'töldum', 'teldi', 'taldi'}
+26 	 S	 reka	 24 	 {'rak', 'ræki', 'rækir', 'rakst', 'ráku'}
+26 	 S	 draga	 1 	 {'drægju', 'dró', 'drógust', 'dróst'}
+25 	 S	 vinna	 24 	 {'vann', 'unnu', 'ynni'}
+24 	 S	 heita	 24 	 {'hétu', 'héti', 'hét'}
+23 	 S	 hefja	 j24 	 {'hófust', 'hófst', 'hóf', 'hófu', 'hæfist', '$hófst'}
+23 	 2	 leita	 24 	 {'leitaði', 'leitaðist', 'leituðum', '$leit', 'leituðu'}
+23 	 1	 vekja	 j24 	 {'vöktu', 'vekti', 'vakti'}
+22 	 S	 detta	 24 	 {'datt', 'duttu', 'dytti'}
+22 	 1	 byrja	 j24 	 {'byrjuðu', 'byrjuðum', 'byrjaði'}
+22 	 1	 hætta	 23 	 {'hætti', 'hættu'}
+21 	 1	 rétta	 2 	 {'$réttaði', 'rétti'}
+21 	 S	 falla	 1 	 {'féllu', 'félli', 'féllst', 'féll'}
+20 	 2	 vanta	 1 	 {'vantaði'}
+19 	 S	 slá	 0 	 {'sló', 'slógu', 'slógum'}
+19 	 2	 vakna	 1 	 {'vöknuðu', 'vaknaði'}
+19 	 S	 grípa	 2 	 {'gripi', 'greip', 'gripu'}
+19 	 S	 bregða	 24 	 {'brugðist', 'brá', 'brygði', 'brugðu'}
+18 	 1	 benda	 24 	 {'bendum', 'benti', 'bentu'}
+17 	 1	 lýsa	 2 	 {'lýstu', 'lýsti', '$lýsti'}
+17 	 1	 bæta	 23 	 {'bætti', 'bættust', 'bættist', 'bætist'}
+17 	 2	 opna	 1 	 {'opnuðust', 'opnaði', 'opnaðist'}
+17 	 1	 brosa	 1 	 {'brosti'}
+16 	 S	 ákveða	 124 	 {'ákváðum', 'ákvað'}
+16 	 S	 hverfa	 24 	 {'hurfu', 'hvarf', '$hverfðist', 'hyrfi'}
+15 	 1	 missa	 24 	 {'misstu', 'misti', 'missti'}
+14 	 S	 lesa	 24 	 {'las', 'lestu', 'læsi'}
+14 	 1	 fylla	 24 	 {'fyltu', 'fylltist', 'fylltu', 'fyllti', 'fylti'}
+14 	 S	 drekka	 24 	 {'drukkum', 'drykki', 'drukku', 'drakk'}
+14 	 1	 gleyma	 243 	 {'gleymdist', 'gleymdu', 'gleym$', 'gleymdi', 'gleymdust'}
+14 	 S	 stinga	 24 	 {'stungu', 'stakkst', 'stakk', 'stakst', 'styngju'}
+13 	 1	 hitta	 24 	 {'hitti', 'hittu', 'hittumst', 'hittust'}
+13 	 S	 hlaupa	 1 	 {'hljóp', 'hlupu'}
+13 	 1	 veita	 24 	 {'veitti'}
+13 	 1	 kveðja	 j24 	 {'kvaddi', 'kvöddust', 'kvöddumst', 'kvöddu'}
+13 	 S	 ráða	 1 	 {'réð', '$réð', 'réðu', 'réði', 'réðst', 'réðum'}
+13 	 2	 hvarfla	 1 	 {'hvarflaði'}
+13 	 1	 færa	 23 	 {'færðust', 'færðu', 'færði'}
+13 	 1	 birta	 24 	 {'birtust', 'birtist', 'birti'}
+13 	 1	 sækja	 j23 	 {'sæktuð', 'sótti', 'sóttum', 'sóttu', 'sóttist'}
+12 	 S	 fljúga	 1 	 {'flaug', 'flugu', 'flygi'}
+12 	 1	 kaupa	 1 	 {'keypti', 'keyptu', 'keyptir'}
+12 	 2	 átta	 1 	 {'áttaði'}
+12 	 1	 þegja	 j24 	 {'þögðu', 'þagði'}
+12 	 S	 lúta	 1 	 {'lyti', 'lutu', 'laut'}
+12 	 1	 lifa	 24 	 {'(vbdi lifði', 'lifðu', 'lifðum', 'lifði'}
+12 	 2	 dansa	 1 	 {'dönsuðum', 'dönsuðu', 'dansaði'}
+12 	 1	 vilja	 j24 	 {'vildi', 'vilduð'}
+12 	 2	 spila	 24 	 {'spiluðum', 'spiluðuð', 'spilaði', 'spiluðu'}
+12 	 S	 leika	 24 	 {'lékum', 'lék', 'léki', 'léku'}
+11 	 1	 þora	 1 	 {'þorðu', 'þorði'}
+11 	 1	 lenda	 24 	 {'lenti', 'lentu'}
+11 	 1	 skipta	 24 	 {'skiptust', 'skipti', 'skiptumst'}
+11 	 1	 senda	 24 	 {'$sendi', 'sendi', 'sendum', 'sentist'}
+11 	 2	 hlusta	 1 	 {'hlustaði', 'hlustuðu'}
+11 	 2	 nota	 1 	 {'notuðu', 'notaði'}
+10 	 1	 ríkja	 j2 	 {'ríkti'}
+10 	 S	 skína	 2 	 {'skein'}
+10 	 1	 kveikja	 j24 	 {'kveiktu', 'kveikti'}
+10 	 S	 ríða	 2 	 {'riðu', 'reið', 'riði'}
+10 	 1	 minna	 24 	 {'minti', 'minntist', 'mintu', 'minntu', 'minnti'}
+10 	 1	 hrista	 24 	 {'hristu', 'hristi', 'hristust'}
+10 	 1	 mæta	 23 	 {'mættu', 'mætti', 'mætist', 'mættum', 'mættust'}
+10 	 1	 hringja	 j24 	 {'hringdi'}
+10 	 1	 nefna	 24 	 {'nefndi', 'nefndir$'}
+10 	 1	 þola	 1 	 {'þoldi'}
+10 	 S	 skjálfa	 1 	 {'skalf', 'skulfu'}
+9 	 1	 hyggja	 j24 	 {'hygðist', 'hugðist', 'hugði'}
+9 	 1	 duga	 1 	 {'dugðu', 'dygði', 'dugði'}
+9 	 S	 syngja	 j24 	 {'sungum', 'söng'}
+9 	 1	 berja	 j24 	 {'barðist', 'barði'}
+9 	 1	 styðja	 j24 	 {'studdu', 'studdi', 'styddist', 'studdist'}
+9 	 S	 strjúka	 1 	 {'strauk'}
+9 	 1	 leiða	 24 	 {'leiddu', 'leiddi', 'leiddust'}
+9 	 1	 lyfta	 24 	 {'lyftist', 'lyfti', 'lyftu'}
+9 	 S	 sofa	 1 	 {'svaf'}
+9 	 1	 enda	 24 	 {'entist', 'endaði'}
+9 	 1	 henda	 24 	 {'$henti', '$hentu', 'henti'}
+8 	 2	 mynda	 24 	 {'myndaðist', 'mynduðu', 'myndaði', '$myndaðist', 'mynduðum'}
+8 	 S	 rífa	 2 	 {'reif', 'rifu'}
+8 	 S	 hrökkva	 1 	 {'hrökk', 'hrökkti'}
+8 	 S	 ljúka	 1 	 {'$lukti', 'lyki', 'lauk', 'luku'}
+8 	 1	 flytja	 j24 	 {'flyttum', 'flutti', 'flytti', 'fluttu', 'fluttust'}
+8 	 1	 tengja	 j24 	 {'tengdi', 'tengdumst', 'tengdist'}
+8 	 1	 skifta	 24 	 {'skiftu', 'skiftust', 'skifti'}
+8 	 1	 treysta	 243 	 {'treysti'}
+8 	 2	 kasta	 1 	 {'köstuðu', 'kastaði'}
+8 	 2	 vísa	 2 	 {'vísaði'}
+8 	 2	 þakka	 1 	 {'$þökkuðum', 'þakkaði'}
+8 	 1	 kenna	 24 	 {'kenndi'}
+8 	 S	 snerta	 24 	 {'snerti', 'snertu', 'snart'}
+8 	 2	 gruna	 1 	 {'grunaði'}
+8 	 1	 vara	 1 	 {'varðist', 'varaði', 'vöruðu', 'varði', 'varaðist'}
+8 	 S	 brjóta	 1 	 {'brutu', 'braut'}
+8 	 1	 flýta	 2 	 {'flýtti', 'flýttum', 'flýttu'}
+8 	 S	 hanga	 1 	 {'héngu', 'hékk'}
+7 	 1	 stefna	 24 	 {'stefndu', 'stefndi', 'stefndum'}
+7 	 1	 þrá	 0 	 {'þráðu', 'þráði'}
+7 	 2	 rifja	 j24 	 {'rifjuðu', 'rifjaðist'}
+7 	 2	 skrifa	 24 	 {'skrifaði'}
+7 	 2	 varpa	 1 	 {'varpaði', 'vörpuðu', 'varpaðist', '$varpaði', '$vörpuðu', 'vörpuðum'}
+7 	 2	 óska	 1 	 {'óskuðu', 'óskaði'}
+7 	 S	 nema	 24 	 {'næmi', 'nam'}
+6 	 2	 skoða	 1 	 {'skoðaði'}
+6 	 S	 deyja	 j243 	 {'dó', 'dóu', 'dæju'}
+6 	 S	 víkja	 j2 	 {'vikju', 'vék'}
+6 	 S	 stíga	 2 	 {'stigi', 'stigu', 'sté', 'steig'}
+6 	 1	 kyssa	 24 	 {'kyssti'}
+6 	 S	 aka	 1 	 {'óku', 'ók'}
+6 	 S	 gráta	 1 	 {'grét', 'grétu'}
+6 	 2	 stafa	 1 	 {'stafaði', 'stöfuðu'}
+6 	 2	 þagna	 1 	 {'þagnaði', 'þögnuðu'}
+6 	 2	 laga	 1 	 {'lagaði', 'lagaðist', 'lagaðir'}
+6 	 1	 klæða	 23 	 {'klæddi', 'klæddu', 'klæddist'}
+6 	 1	 glotta	 1 	 {'glotti', 'glottu'}
+6 	 1	 frétta	 2 	 {'fréttist', 'fréttu', 'frétti'}
+6 	 1	 læra	 23 	 {'lær$', 'lærði', 'lærðu'}
+6 	 2	 reika	 24 	 {'reikaði'}
+6 	 S	 skjóta	 1 	 {'skutust', 'skutu', 'skaust', 'skaut'}
+6 	 S	 súpa	 1 	 {'supu', 'saup'}
+6 	 S	 njóta	 1 	 {'naut', 'nutu', 'nyti'}
+5 	 S	 stökkva	 1 	 {'stökk'}
+5 	 2	 lofa	 1 	 {'lofaðir', 'lofaði'}
+5 	 S	 spretta	 24 	 {'spruttu', 'sprettu', 'spratt'}
+5 	 2	 titra	 24 	 {'titruðu', 'titraði', '(vbdi titraði'}
+5 	 2	 tapa	 1 	 {'töpuðust', 'töpuðu', 'tapaði'}
+5 	 S	 rísa	 2 	 {'risu', 'reis', 'risi'}
+5 	 2	 roðna	 1 	 {'roðnaði'}
+5 	 S	 fela	 24 	 {'fól', 'fólst'}
+5 	 1	 heimta	 24 	 {'heimtaði', 'heimtuðu'}
+5 	 1	 leyna	 243 	 {'leyndi', 'leyndust', 'leyndist'}
+5 	 2	 hjálpa	 1 	 {'hjálpaði', 'hjálpuðu'}
+5 	 1	 skýra	 2 	 {'skýrðist', '$skýrði', 'skýrði', 'skýrðu'}
+5 	 1	 trúa	 1 	 {'tryði', 'trúði', 'tryðu'}
+5 	 S	 springa	 24 	 {'spryngi', 'sprungum', 'sprakk'}
+5 	 1	 hleypa	 243 	 {'hleypti'}
+5 	 S	 valda	 1 	 {'olli', 'ollu'}
+5 	 2	 líka	 2 	 {'líkaði'}
+5 	 1	 ryðja	 j24 	 {'ruddist', 'ruddumst', 'ruddi', 'ruddu'}
+5 	 1	 skorta	 1 	 {'skorti'}
+5 	 S	 kjósa	 1 	 {'kusu', 'kysi', 'kaus'}
+5 	 1	 leyfa	 243 	 {'leyfði', 'leyfðu'}
+5 	 1	 herða	 24 	 {'herti', 'hertu'}
+5 	 S	 rjúka	 1 	 {'ryki', 'rauk'}
+5 	 1	 blasa	 1 	 {'blasti'}
+5 	 1	 streyma	 243 	 {'streymdi', 'streymdu'}
+5 	 2	 sofna	 1 	 {'sofnaði', 'sofnuðu'}
+5 	 1	 stara	 1 	 {'störðu', 'starði'}
+5 	 1	 létta	 2 	 {'létti'}
+5 	 2	 reikna	 24 	 {'reiknaði'}
+5 	 1	 breiða	 24 	 {'breiddi', 'breiddum'}
+5 	 1	 þeyta	 243 	 {'þeytti'}
+5 	 2	 hrópa	 1 	 {'hrópaði'}
+5 	 1	 hvetja	 j24 	 {'hvatti'}
+5 	 2	 tauta	 1 	 {'tautaði'}
+4 	 1	 líkja	 j2 	 {'líktist'}
+4 	 1	 fæða	 23 	 {'fæddi', 'fæddist', 'fæddust'}
+4 	 S	 bíta	 2 	 {'beit'}
+4 	 2	 hika	 24 	 {'hikaði', 'hikuðu'}
+4 	 2	 tákna	 1 	 {'táknaði'}
+4 	 1	 hvíla	 2 	 {'hvíldi'}
+4 	 1	 gnæfa	 23 	 {'gnæfðu', '$gnæfði', 'gnæfði'}
+4 	 1	 eyða	 243 	 {'eyddi'}
+4 	 2	 elda	 24 	 {'eldi', 'eldaði', 'elduðum'}
+4 	 1	 hrynja	 j24 	 {'hrundu', 'hryndi'}
+4 	 2	 loka	 1 	 {'lokaði', 'lokuðu', 'lokaðist'}
+4 	 S	 vinda	 24 	 {'vatt', 'undu'}
+4 	 1	 skynja	 j24 	 {'skynjaði'}
+4 	 2	 kvarta	 1 	 {'kvartaði', 'kvörtuðu'}
+4 	 2	 hljóma	 1 	 {'hljómuðu', 'hljómaði'}
+4 	 1	 fletta	 24 	 {'fletti'}
+4 	 2	 losa	 1 	 {'losaðist', 'losaði', 'losuðu'}
+4 	 1	 gæta	 23 	 {'gætti'}
+4 	 1	 kynna	 24 	 {'kynntumst', 'kynnti', '$kynnti'}
+4 	 2	 flögra	 1 	 {'flögraði', 'flögruðu'}
+4 	 1	 hreyfa	 243 	 {'hreyfði'}
+4 	 2	 halla	 1 	 {'hallaðist', 'hallaði'}
+4 	 1	 þylja	 j24 	 {'þuldi', 'þuldu'}
+4 	 S	 drepa	 24 	 {'drápu', 'drap'}
+4 	 S	 troða	 1 	 {'tróð'}
+4 	 S	 brenna	 24 	 {'brann', 'brendu'}
+4 	 1	 hirða	 24 	 {'hirti', 'hirtu'}
+4 	 S	 skríða	 2 	 {'skreið', 'skriðu'}
+4 	 1	 skemmta	 24 	 {'skemmtu', 'skemmti'}
+4 	 1	 vefja	 j24 	 {'vafði', 'vöfðu'}
+4 	 1	 dá	 0 	 {'dáði', 'dáðist', 'dáðust'}
+4 	 S	 blása	 1 	 {'blés', 'blésu'}
+4 	 S	 svífa	 2 	 {'sveif', 'svifu'}
+4 	 1	 beita	 24 	 {'beittu', 'beitti'}
+4 	 S	 auka	 1 	 {'jók'}
+4 	 1	 smeygja	 j243 	 {'smeygði'}
+4 	 2	 snara	 1 	 {'snaraðist', 'snöruðu'}
+4 	 1	 byggja	 j24 	 {'byggðist', 'bygðu', 'byggir'}
+4 	 2	 hóta	 1 	 {'hótaði', 'hótuðu'}
+4 	 1	 kreista	 24 	 {'kreisti'}
+4 	 S	 velta	 24 	 {'(vbds ylti', 'veltist', 'valt'}
+4 	 1	 ræskja	 j23 	 {'ræskti'}
+4 	 2	 góla	 1 	 {'góluðu', 'gólaði'}
+4 	 1	 leysa	 243 	 {'leystu', 'leysti', 'leystist'}
+4 	 1	 greiða	 24 	 {'$greiddi', 'greiddi', 'greiðist'}
+4 	 2	 stunda	 1 	 {'stunduðu', 'stundaði'}
+4 	 S	 geta	 24 	 {'gátu', 'gat'}
+4 	 S	 þjóta	 1 	 {'þaut'}
+4 	 1	 neyða	 243 	 {'neyddist', 'neyddi'}
+4 	 2	 vona	 1 	 {'vonuðu', 'vonaði'}
+4 	 S	 skreppa	 24 	 {'skrapp', 'skryppir', 'skruppu'}
+4 	 1	 ýta	 2 	 {'ýttu', 'ýtti'}
+3 	 1	 keyra	 243 	 {'keyrði'}
+3 	 S	 hrjóta	 1 	 {'hrutu', 'hraut'}
+3 	 1	 græða	 23 	 {'græddist', 'græddi', 'græddu'}
+3 	 1	 skella	 24 	 {'skellti'}
+3 	 2	 eigna	 24 	 {'eignaðist'}
+3 	 1	 selja	 j24 	 {'seldi'}
+3 	 S	 álíta	 12 	 {'áleit'}
+3 	 2	 elska	 24 	 {'elskuðum', 'elskuðumst', 'elskaði'}
+3 	 S	 skafa	 1 	 {'skóf', 'skófu'}
+3 	 2	 kinka	 24 	 {'kinkaði', 'kinkuðu'}
+3 	 2	 lokka	 1 	 {'lokkaði'}
+3 	 2	 klappa	 1 	 {'klöppuðu', 'klappaði'}
+3 	 S	 vega	 24 	 {'$vegaði', 'vó', '(vbdi vó'}
+3 	 1	 breyta	 243 	 {'breyttist', 'breyttu', 'breytti'}
+3 	 1	 festa	 24 	 {'festi'}
+3 	 2	 orða	 1 	 {'orðaði'}
+3 	 2	 nudda	 1 	 {'nuddaði', 'nudduðu'}
+3 	 2	 þurrka	 1 	 {'þurrkaði'}
+3 	 2	 hljóða	 1 	 {'hljóðaði'}
+3 	 S	 sleppa	 24 	 {'sleppti', 'slepptu', 'slepti'}
+3 	 2	 hata	 1 	 {'hötuðu', 'hataði'}
+3 	 2	 hreinsa	 24 	 {'hreinsaði'}
+3 	 1	 lemja	 j24 	 {'lamdi'}
+3 	 S	 svíða	 2 	 {'sveið', 'sviði'}
+3 	 2	 bursta	 1 	 {'burstuðu', 'burstaði'}
+3 	 2	 sakna	 1 	 {'söknuðu', 'saknaði'}
+3 	 2	 stama	 1 	 {'stamaði'}
+3 	 2	 snuðra	 1 	 {'snuðraði', 'snuðruðu'}
+3 	 2	 hlykkja	 j24 	 {'hlykkjaðist', 'hlykkjandist', 'hlykkjaði'}
+3 	 1	 krefja	 j24 	 {'krafðist', 'krafði'}
+3 	 2	 umla	 1 	 {'umlaði'}
+3 	 1	 tísta	 2 	 {'tístu'}
+3 	 1	 ræða	 23 	 {'ræddum', 'ræddi'}
+3 	 S	 éta	 2 	 {'át'}
+3 	 2	 geisa	 24 	 {'geisuðu', 'geisaði'}
+3 	 2	 rugla	 1 	 {'rugluðu', 'ruglaðist'}
+3 	 1	 nenna	 24 	 {'nenti', 'nentu', 'nennti'}
+3 	 1	 rýna	 2 	 {'rýndu', 'rýndi'}
+3 	 2	 viðra	 24 	 {'viðraði'}
+3 	 2	 ítreka	 24 	 {'ítrekaði'}
+3 	 2	 geispa	 24 	 {'geispaði'}
+3 	 2	 þyrla	 24 	 {'þyrlaðist', 'þyrlaði'}
+3 	 2	 kveinka	 24 	 {'kveinkaði'}
+3 	 2	 humma	 1 	 {'hummaði'}
+3 	 1	 hengja	 j24 	 {'hengdi'}
+3 	 2	 loga	 1 	 {'logaði'}
+3 	 1	 teygja	 j243 	 {'teygði', 'teygðu'}
+3 	 2	 klifra	 24 	 {'klifraði', 'klifruðu'}
+3 	 1	 styrka	 24 	 {'styrkti'}
+3 	 2	 glaðna	 1 	 {'glaðnaði'}
+3 	 1	 rölta	 1 	 {'röltu', 'rölti'}
+3 	 2	 safna	 1 	 {'safnaði', 'söfnuðust'}
+3 	 S	 fljóta	 1 	 {'flaut', 'flutu'}
+3 	 1	 hella	 24 	 {'hellti'}
+3 	 1	 svæfa	 23 	 {'svæfi'}
+3 	 S	 sjóða	 1 	 {'sauð', '(vbdi sauð'}
+3 	 1	 dvelja	 j24 	 {'dvaldist', 'dvöldust', 'dveldi'}
+3 	 1	 æpa	 23 	 {'æptu', 'æpti'}
+3 	 S	 róa	 1 	 {'róaðist', 'róaði'}
+3 	 2	 ganta	 1 	 {'gantaðist'}
+3 	 2	 strengja	 j24 	 {'strengduð', 'strengdi'}
+3 	 1	 dreyma	 243 	 {'dreymdi'}
+3 	 S	 binda	 24 	 {'batt'}
+3 	 2	 mála	 1 	 {'málaði'}
+3 	 2	 ranka	 1 	 {'rankaði'}
+3 	 2	 skila	 24 	 {'skiluðu', 'skilaði'}
+3 	 S	 stela	 24 	 {'stal', 'stælu'}
+3 	 S	 vaxa	 1 	 {'óx', 'uxu'}
+2 	 2	 kosta	 1 	 {'kostaði', 'kostuðu'}
+2 	 2	 stansa	 1 	 {'stansaði', 'stönsuðu'}
+2 	 S	 sá	 0 	 {'sáði'}
+2 	 2	 dofna	 1 	 {'dofnuðu', 'dofnaði'}
+2 	 1	 misheyra	 243 	 {'misheyrðist'}
+2 	 1	 hvæsa	 23 	 {'hvæsti'}
+2 	 2	 skipa	 24 	 {'skipaði'}
+2 	 2	 ama	 1 	 {'amaði'}
+2 	 2	 henta	 24 	 {'hentust', 'hentaði'}
+2 	 2	 stöðva	 1 	 {'stöðvaðist'}
+2 	 2	 forða	 1 	 {'forðaði'}
+2 	 2	 stikla	 24 	 {'stiklaði'}
+2 	 1	 þreyta	 243 	 {'þreytti'}
+2 	 2	 hrifsa	 24 	 {'hrifsaði'}
+2 	 2	 þurka	 1 	 {'þurkaði'}
+2 	 1	 una	 1 	 {'yndi'}
+2 	 2	 sparka	 1 	 {'sparkaði'}
+2 	 2	 glamra	 1 	 {'glamraði'}
+2 	 1	 dreifa	 24 	 {'dreifði', 'dreifðu'}
+2 	 1	 skyggja	 j24 	 {'skygði', 'skyggði'}
+2 	 1	 sannfæra	 123 	 {'sannfærumst', 'sannfærðist'}
+2 	 1	 loða	 1 	 {'loddi'}
+2 	 1	 kíma	 2 	 {'kímdi'}
+2 	 1	 syrgja	 j24 	 {'syrgði'}
+2 	 2	 öskra	 1 	 {'öskraði'}
+2 	 1	 gretta	 24 	 {'gretti'}
+2 	 2	 furða	 1 	 {'furðaði', 'furðuðu'}
+2 	 1	 spenna	 24 	 {'spennti'}
+2 	 S	 bresta	 24 	 {'brast'}
+2 	 2	 iða	 24 	 {'iðaði'}
+2 	 1	 læsa	 23 	 {'læsti'}
+2 	 2	 ryksuga	 124 	 {'ryksugaði'}
+2 	 1	 þýða	 2 	 {'þýddi'}
+2 	 2	 klóra	 1 	 {'klóraði'}
+2 	 1	 hlífa	 2 	 {'hlífði'}
+2 	 2	 veifa	 24 	 {'veifaði'}
+2 	 S	 skera	 24 	 {'skarst', 'skar'}
+2 	 S	 vella	 24 	 {'vall'}
+2 	 1	 flýja	 j2 	 {'flýði', 'flúði'}
+2 	 S	 verpa	 24 	 {'varp'}
+2 	 S	 genga	 24 	 {'gengust'}
+2 	 2	 kitla	 24 	 {'kitlaði'}
+2 	 2	 þoka	 1 	 {'þokuðu', 'þokaði'}
+2 	 2	 minnka	 24 	 {'minkuðu'}
+2 	 1	 þrýsta	 2 	 {'þrýsti'}
+2 	 2	 banka	 1 	 {'bankaði'}
+2 	 1	 gleðja	 j24 	 {'gladdi', 'glöddust'}
+2 	 1	 bæra	 23 	 {'bærðust', 'bærðist'}
+2 	 2	 þroska	 1 	 {'þroskaðist'}
+2 	 S	 merkja	 j24 	 {'merkti'}
+2 	 2	 hátta	 1 	 {'háttaði'}
+2 	 1	 grúfa	 1 	 {'grúfði'}
+2 	 1	 reyta	 243 	 {'reytti', 'reyttist'}
+2 	 2	 bragða	 1 	 {'bragðaði'}
+2 	 S	 blanda	 1 	 {'blandaðist'}
+2 	 1	 flökta	 1 	 {'flökti'}
+2 	 1	 smyrja	 j24 	 {'smurði'}
+2 	 2	 haga	 1 	 {'hagaði'}
+2 	 S	 blóta	 1 	 {'blótaði'}
+2 	 2	 faðma	 1 	 {'faðmaði'}
+2 	 1	 híma	 2 	 {'hímdu', 'hímdum'}
+2 	 2	 gliðna	 24 	 {'gliðnaði'}
+2 	 2	 sópa	 1 	 {'sópaði'}
+2 	 2	 marséra	 12 	 {'marséraði'}
+2 	 S	 þiggja	 j24 	 {'þáði'}
+2 	 S	 kvíða	 2 	 {'kveið'}
+2 	 1	 dæsa	 23 	 {'dæsti', 'dæstu'}
+2 	 2	 blunda	 1 	 {'blundaði', 'blunduðum'}
+2 	 2	 lifna	 24 	 {'lifnaði'}
+2 	 2	 prédika	 24 	 {'prédikaði', 'prédikuðuð'}
+2 	 1	 mótmæla	 123 	 {'mótmælti', 'mótmæltu'}
+2 	 1	 dynja	 j24 	 {'dyndi', 'dyndu'}
+2 	 1	 tína	 2 	 {'tíndi'}
+2 	 2	 bráðna	 1 	 {'bráðnuðu', 'bráðnaði'}
+2 	 2	 staldra	 1 	 {'stöldruðu', 'staldraði'}
+2 	 1	 velja	 j24 	 {'valdi', 'völdu'}
+2 	 1	 fullyrða	 124 	 {'fullyrti'}
+2 	 1	 neita	 24 	 {'neitaði'}
+2 	 1	 beina	 24 	 {'beindist'}
+2 	 S	 kljúfa	 1 	 {'klauf'}
+2 	 2	 glampa	 1 	 {'glömpuðu', 'glampaði'}
+2 	 2	 söðla	 1 	 {'söðlaði'}
+2 	 2	 rofna	 1 	 {'rofnaði'}
+2 	 2	 gutla	 1 	 {'gutlaði'}
+2 	 1	 gaumgæfa	 123 	 {'gaumgæfði'}
+2 	 2	 hrapa	 1 	 {'hröpuðu', 'hrapaði'}
+2 	 S	 verða	 24 	 {'yrði', 'urðu'}
+2 	 2	 varða	 1 	 {'varðaði'}
+2 	 2	 skamma	 1 	 {'skammaðist'}
+2 	 S	 spinna	 24 	 {'spann'}
+2 	 2	 varna	 1 	 {'varnaði'}
+2 	 2	 muna	 1 	 {'munaði'}
+2 	 1	 kippa	 24 	 {'kippti'}
+2 	 2	 niða	 24 	 {'niðaði'}
+2 	 2	 þjóna	 1 	 {'þjónaði'}
+2 	 1	 kúra	 1 	 {'kúrði'}
+2 	 2	 sigra	 24 	 {'sigraði'}
+2 	 1	 bræla	 23 	 {'brældi'}
+2 	 S	 sökkva	 1 	 {'sukku', 'sökkti'}
+2 	 S	 þrífa	 2 	 {'þreif'}
+2 	 1	 byrgja	 j24 	 {'byrgðu', 'byrgði'}
+2 	 1	 lafa	 1 	 {'lafði'}
+2 	 1	 fleygja	 j243 	 {'fleygði'}
+2 	 2	 galdra	 1 	 {'galdraði'}
+2 	 2	 blikka	 24 	 {'blikkaði'}
+2 	 2	 sveima	 24 	 {'sveimaði'}
+2 	 2	 stofna	 1 	 {'stofnuðu'}
+2 	 2	 luma	 1 	 {'lumaði'}
+2 	 2	 móta	 1 	 {'mótuðust', 'mótaðist'}
+2 	 2	 þramma	 1 	 {'þrammaði'}
+2 	 2	 glitra	 24 	 {'glitraði'}
+2 	 1	 rymja	 j24 	 {'rumdi', 'rumdu'}
+2 	 1	 tæma	 23 	 {'tæmdist', 'tæmdi'}
+2 	 2	 spjalla	 1 	 {'spjallaði', 'spjölluðu'}
+2 	 S	 gjalla	 1 	 {'gall'}
+2 	 S	 skalla	 1 	 {'skall'}
+2 	 2	 hósta	 1 	 {'hóstaði'}
+2 	 1	 drynja	 j24 	 {'drundi'}
+2 	 2	 mora	 1 	 {'moraði'}
+2 	 2	 heilsa	 24 	 {'heilsaði'}
+2 	 1	 skyrpa	 24 	 {'skyrpti', '(vbdi skyrpti'}
+2 	 1	 glíma	 2 	 {'glímdi'}
+2 	 2	 rugga	 1 	 {'ruggaði'}
+2 	 1	 hlýða	 2 	 {'hlýddu'}
+2 	 1	 drýga	 2 	 {'drýgði'}
+2 	 2	 kanna	 1 	 {'kannaðist'}
+2 	 1	 elta	 24 	 {'elti', 'eltum'}
+2 	 1	 rekja	 j24 	 {'röktum'}
+2 	 1	 hvá	 0 	 {'hváði'}
+2 	 2	 þorna	 1 	 {'þornuðu', 'þornaði'}
+2 	 2	 strunsa	 1 	 {'strunsaði'}
+2 	 1	 snæða	 23 	 {'snæddu', 'snæddum'}
+2 	 2	 grána	 1 	 {'gránaði'}
+2 	 1	 slútta	 1 	 {'slútti', 'slúttu'}
+2 	 1	 hylja	 j24 	 {'huldi', 'hylti'}
+2 	 S	 höggva	 1 	 {'hjó'}
+2 	 2	 sanna	 1 	 {'sannaðist'}
+2 	 1	 bræða	 23 	 {'bræddi'}
+2 	 1	 gleypa	 243 	 {'gleypti', 'gleyptu'}
+2 	 2	 hjóla	 1 	 {'hjólaði'}
+2 	 2	 aftra	 1 	 {'aftraði'}
+2 	 1	 teyma	 243 	 {'teymdi'}
+2 	 2	 blaka	 1 	 {'blökuðu', 'blakaði'}
+2 	 2	 banda	 1 	 {'bandaði'}
+2 	 S	 hrífa	 2 	 {'hreif', 'hrifu'}
+2 	 2	 muldra	 1 	 {'muldraði'}
+2 	 2	 grugga	 1 	 {'gruggaði'}
+2 	 2	 handsala	 1 	 {'handsöluðum', 'handsöluðu'}
+2 	 2	 skapa	 1 	 {'skapaði', 'skóp'}
+2 	 1	 meina	 24 	 {'meinti', 'meinuðu'}
+2 	 2	 gjóa	 1 	 {'gjóaði'}
+2 	 1	 bylja	 j24 	 {'buldu', 'bylti'}
+2 	 2	 mata	 1 	 {'mataði', 'mötuðumst'}
+2 	 2	 smokra	 1 	 {'smokraði'}
+2 	 1	 stynja	 j24 	 {'stundi'}
+2 	 1	 flykkja	 j24 	 {'flykktust'}
+2 	 1	 einsetja	 j24 	 {'einsetti'}
+2 	 2	 baða	 1 	 {'baðaði', 'böðuðu'}
+2 	 2	 vökna	 1 	 {'vöknaði'}
+2 	 1	 leiðrétta	 24 	 {'leiðrétti'}
+2 	 1	 eira	 24 	 {'eirði'}
+1 	 1	 sneiða	 24 	 {'sneiddi'}
+1 	 S	 síga	 2 	 {'sigju'}
+1 	 2	 hálflanga	 1 	 {'hálflangaði'}
+1 	 S	 ala	 1 	 {'ól'}
+1 	 2	 raga	 1 	 {'ragaði'}
+1 	 2	 útvarpa	 1 	 {'útvarpaði'}
+1 	 2	 nöldra	 1 	 {'nöldraði'}
+1 	 1	 gelta	 24 	 {'geltu'}
+1 	 2	 manna	 1 	 {'mannaðist'}
+1 	 1	 ýra	 2 	 {'ýrði'}
+1 	 1	 glæða	 23 	 {'glæddi'}
+1 	 1	 lagfæra	 123 	 {'lagfærðu'}
+1 	 2	 gösla	 1 	 {'göslaði'}
+1 	 2	 vaska	 1 	 {'vaskaði'}
+1 	 2	 urga	 1 	 {'urgaði'}
+1 	 2	 drasla	 1 	 {'draslaði'}
+1 	 2	 smassa	 1 	 {'smassaði'}
+1 	 2	 staðna	 1 	 {'staðnaði'}
+1 	 2	 ummynda	 124 	 {'ummyndaðist'}
+1 	 S	 hrjósa	 1 	 {'hraus'}
+1 	 2	 toga	 1 	 {'togaðist'}
+1 	 2	 kvaka	 1 	 {'kvökuðu'}
+1 	 2	 plokka	 1 	 {'plokkaði'}
+1 	 2	 ólga	 1 	 {'ólgaði'}
+1 	 1	 tæta	 23 	 {'tættist'}
+1 	 1	 hræra	 23 	 {'hrærði'}
+1 	 2	 laða	 1 	 {'laðaði'}
+1 	 2	 uppgötva	 1 	 {'uppgötvaði'}
+1 	 2	 lesta	 24 	 {'lestuðu'}
+1 	 1	 kæra	 23 	 {'kærði'}
+1 	 2	 krafsa	 1 	 {'krafsaði'}
+1 	 2	 vinka	 24 	 {'vinkaði'}
+1 	 2	 skunda	 1 	 {'skundaði'}
+1 	 1	 hefta	 24 	 {'hefti'}
+1 	 2	 öfunda	 1 	 {'öfundaði'}
+1 	 2	 stoppa	 1 	 {'stoppuðu'}
+1 	 2	 flauta	 1 	 {'flautaði'}
+1 	 2	 hringa	 24 	 {'hringaðist'}
+1 	 2	 orsaka	 1 	 {'orsökuðu'}
+1 	 1	 yrkja	 j24 	 {'orti'}
+1 	 S	 hrykkja	 j24 	 {'hrykkir'}
+1 	 2	 vikna	 24 	 {'viknaði'}
+1 	 2	 lippa	 24 	 {'lippaði'}
+1 	 2	 launa	 1 	 {'launuðu'}
+1 	 1	 skulda	 1 	 {'skuldi'}
+1 	 1	 kíkja	 j2 	 {'kíkti'}
+1 	 1	 hneppa	 24 	 {'hnepti'}
+1 	 2	 skálma	 1 	 {'skálmaði'}
+1 	 2	 ímynda	 24 	 {'ímyndaði'}
+1 	 2	 gogga	 1 	 {'gogguðu'}
+1 	 2	 lækna	 23 	 {'læknaði'}
+1 	 1	 meiða	 24 	 {'meiddi'}
+1 	 2	 hvísla	 2 	 {'hvíslaði'}
+1 	 2	 suða	 1 	 {'suðaði'}
+1 	 S	 þverra	 24 	 {'þverraði'}
+1 	 1	 kaffæra	 123 	 {'kaffærði'}
+1 	 2	 hnusa	 1 	 {'hnusaði'}
+1 	 2	 ljóma	 1 	 {'ljómuðu'}
+1 	 1	 glenna	 24 	 {'glennti'}
+1 	 1	 trúða	 1 	 {'trúðir$'}
+1 	 2	 rúlla	 1 	 {'rúllaði'}
+1 	 1	 svæla	 23 	 {'svældu'}
+1 	 2	 framkalla	 1 	 {'framkölluðu'}
+1 	 2	 handfjatla	 1 	 {'handfjatlaði'}
+1 	 1	 hnykkja	 j24 	 {'hnykkti'}
+1 	 2	 maula	 1 	 {'maulaði'}
+1 	 2	 bergmála	 124 	 {'bergmálaði'}
+1 	 1	 sinna	 24 	 {'sinnti'}
+1 	 2	 sveifla	 24 	 {'sveiflaði'}
+1 	 1	 gera	 24 	 {'ger$'}
+1 	 2	 nötra	 1 	 {'nötraði'}
+1 	 2	 játa	 1 	 {'játaði'}
+1 	 S	 slægja	 j23 	 {'slægi'}
+1 	 2	 gusa	 1 	 {'gusuðust'}
+1 	 2	 glóa	 1 	 {'glóuðu'}
+1 	 1	 tefla	 24 	 {'tefldu'}
+1 	 2	 malda	 1 	 {'maldaði'}
+1 	 1	 stytta	 24 	 {'styttum'}
+1 	 2	 vökva	 1 	 {'vökvaði'}
+1 	 2	 geysa	 243 	 {'geysaði'}
+1 	 2	 lauma	 1 	 {'laumaðist'}
+1 	 S	 tyggja	 j24 	 {'tugði'}
+1 	 1	 skræla	 23 	 {'skrældi'}
+1 	 1	 hreifa	 24 	 {'hreifst'}
+1 	 S	 krjúpa	 1 	 {'kraup'}
+1 	 2	 sárna	 1 	 {'sárnaði'}
+1 	 2	 rannsaka	 1 	 {'rannsakaði'}
+1 	 S	 samanstanda	 1 	 {'samanstóð'}
+1 	 1	 væla	 23 	 {'vældi'}
+1 	 2	 söngla	 1 	 {'sönglaði'}
+1 	 2	 skoppa	 1 	 {'skoppuðu'}
+1 	 S	 skellihlæja	 j243 	 {'skellihló'}
+1 	 2	 hluta	 1 	 {'hlutaðist'}
+1 	 S	 endurtaka	 124 	 {'endurtók'}
+1 	 2	 skorða	 1 	 {'skorðaði'}
+1 	 2	 jaðra	 1 	 {'jaðraði'}
+1 	 1	 inna	 24 	 {'inntu'}
+1 	 2	 sefa	 24 	 {'sefaðist'}
+1 	 2	 áforma	 1 	 {'áformuðu'}
+1 	 1	 þyngja	 j24 	 {'$þyngdu'}
+1 	 2	 saka	 1 	 {'sakaði'}
+1 	 2	 hvítna	 2 	 {'hvítnuðu'}
+1 	 2	 raka	 1 	 {'rakaði'}
+1 	 2	 hringsóla	 124 	 {'hringsóluðu'}
+1 	 2	 sauma	 1 	 {'saumaði'}
+1 	 S	 sveikva	 24 	 {'sveik'}
+1 	 2	 hrísla	 2 	 {'hríslaðist'}
+1 	 2	 spauga	 1 	 {'spauguðu'}
+1 	 2	 lykta	 24 	 {'lyktaði'}
+1 	 S	 lofsyngja	 1j24 	 {'lofsöng'}
+1 	 S	 drífa	 2 	 {'dreif'}
+1 	 2	 rota	 1 	 {'rotaði'}
+1 	 2	 glaðvakna	 1 	 {'glaðvaknaði'}
+1 	 1	 kreppa	 24 	 {'kreptust'}
+1 	 1	 frýja	 j2 	 {'frýði'}
+1 	 2	 iðra	 24 	 {'iðraði'}
+1 	 S	 hvína	 2 	 {'hvein'}
+1 	 2	 dangla	 1 	 {'danglaði'}
+1 	 1	 vera	 24 	 {'vertu'}
+1 	 1	 stemma	 24 	 {'stemmdi'}
+1 	 1	 æða	 23 	 {'æddi'}
+1 	 1	 bretta	 24 	 {'brettu'}
+1 	 2	 hjaðna	 1 	 {'hjöðnuðu'}
+1 	 2	 stirðna	 24 	 {'stirðnuðu'}
+1 	 1	 særa	 23 	 {'særði'}
+1 	 S	 blasta	 1 	 {'blöstu'}
+1 	 2	 storka	 1 	 {'storkuðu'}
+1 	 2	 skrafa	 1 	 {'skröfuðum'}
+1 	 2	 drottna	 1 	 {'drotnuðu'}
+1 	 2	 tjalda	 1 	 {'tjaldaði'}
+1 	 2	 ata	 1 	 {'ataði'}
+1 	 2	 kjassa	 1 	 {'kjassaði'}
+1 	 2	 iðka	 24 	 {'iðkuðu'}
+1 	 2	 miða	 24 	 {'miðaði'}
+1 	 1	 vorkenna	 124 	 {'vorkenndi'}
+1 	 1	 auðkenna	 124 	 {'auðkenndi'}
+1 	 1	 klippa	 24 	 {'klippti'}
+1 	 2	 skaprauna	 1 	 {'skapraunuðu'}
+1 	 2	 sviðna	 24 	 {'sviðnaði'}
+1 	 S	 unna	 1 	 {'unni'}
+1 	 1	 reisa	 24 	 {'reisti'}
+1 	 S	 ljúga	 1 	 {'laug'}
+1 	 S	 skaka	 1 	 {'skók'}
+1 	 1	 hökta	 1 	 {'hökti'}
+1 	 S	 hrinda	 24 	 {'hratt'}
+1 	 2	 úthúða	 1 	 {'úthúðaði'}
+1 	 2	 grotna	 1 	 {'grotnaði'}
+1 	 1	 lýsta	 2 	 {'$lýstist'}
+1 	 1	 móka	 1 	 {'móktu'}
+1 	 1	 drúpa	 1 	 {'drúpti'}
+1 	 2	 erfiða	 24 	 {'erfiðuðu'}
+1 	 S	 grafa	 1 	 {'gróf'}
+1 	 2	 lasa	 1 	 {'$lasaði'}
+1 	 2	 æja	 j23 	 {'áðum'}
+1 	 2	 snarstífna	 12 	 {'snarstífnaði'}
+1 	 1	 næra	 23 	 {'nærðist'}
+1 	 1	 ypta	 24 	 {'ypti'}
+1 	 2	 vanhaga	 1 	 {'vanhagaði'}
+1 	 1	 dreypa	 243 	 {'dreypti'}
+1 	 1	 ferma	 24 	 {'fermdi'}
+1 	 1	 steypa	 243 	 {'steyptist'}
+1 	 2	 versla	 24 	 {'verzluðu'}
+1 	 2	 þrátta	 1 	 {'þráttaði'}
+1 	 S	 vaða	 1 	 {'vaði'}
+1 	 1	 reykja	 j243 	 {'reykti'}
+1 	 2	 gisna	 24 	 {'gisnuðu'}
+1 	 2	 marra	 1 	 {'mörruðu'}
+1 	 1	 smáskríkja	 1j2 	 {'smáskríkti'}
+1 	 1	 eygja	 j243 	 {'eygði'}
+1 	 1	 gerbreyta	 243 	 {'gerbreytist'}
+1 	 1	 ýfa	 2 	 {'ýfði'}
+1 	 2	 landa	 1 	 {'landaði'}
+1 	 2	 hnipra	 24 	 {'hnipruðu'}
+1 	 1	 viðurkenna	 124 	 {'viðurkenndi'}
+1 	 1	 klykkja	 j24 	 {'klykkti'}
+1 	 1	 týna	 2 	 {'týndust'}
+1 	 2	 skrúfa	 1 	 {'skrúfuðust'}
+1 	 1	 gæla	 23 	 {'gældi'}
+1 	 1	 einbeita	 24 	 {'einbeitti'}
+1 	 2	 fálma	 1 	 {'fálmaði'}
+1 	 2	 rasa	 1 	 {'rösuðu'}
+1 	 S	 hníga	 2 	 {'hnigu'}
+1 	 2	 gjálpa	 1 	 {'gjálpaði'}
+1 	 2	 blístra	 2 	 {'blístraði'}
+1 	 2	 helta	 24 	 {'heltuð'}
+1 	 2	 reima	 24 	 {'reimaði'}
+1 	 1	 gegna	 24 	 {'gegndi'}
+1 	 S	 svika	 24 	 {'sviki'}
+1 	 2	 dorma	 1 	 {'dormaði'}
+1 	 2	 skána	 1 	 {'skánaði'}
+1 	 2	 klaga	 1 	 {'$klagaði'}
+1 	 1	 áræða	 123 	 {'áræddi'}
+1 	 2	 fjölga	 1 	 {'fjölgaði'}
+1 	 2	 nóta	 1 	 {'nótaði'}
+1 	 1	 bryðja	 j24 	 {'bruddi'}
+1 	 2	 lina	 24 	 {'linaði'}
+1 	 1	 fylkja	 j24 	 {'fylktu'}
+1 	 2	 dafna	 1 	 {'dafnaði'}
+1 	 2	 banna	 1 	 {'bönnuðu'}
+1 	 2	 boða	 1 	 {'boðaði'}
+1 	 1	 neyta	 243 	 {'neytti'}
+1 	 1	 stilla	 24 	 {'stillti'}
+1 	 1	 æsa	 23 	 {'æstu'}
+1 	 1	 fægja	 j23 	 {'fægði'}
+1 	 1	 góna	 1 	 {'(vbdi góndu'}
+1 	 2	 gjálfra	 1 	 {'gjálfraði'}
+1 	 1	 kynda	 24 	 {'kynti'}
+1 	 1	 grýta	 2 	 {'grýtti'}
+1 	 1	 sveigja	 j24 	 {'sveigðu'}
+1 	 2	 hamra	 1 	 {'hamraði'}
+1 	 1	 vanvirða	 124 	 {'vanvirðir'}
+1 	 2	 kvikna	 24 	 {'kviknaði'}
+1 	 2	 meika	 24 	 {'meikaði'}
+1 	 2	 ropa	 1 	 {'ropuðu'}
+1 	 1	 gista	 24 	 {'gisti'}
+1 	 1	 staðhæfa	 123 	 {'staðhæfði'}
+1 	 2	 hlamma	 1 	 {'hlammaði'}
+1 	 1	 þyrsta	 24 	 {'þyrsti'}
+1 	 2	 brotna	 1 	 {'brotnuðu'}
+1 	 1	 lygna	 24 	 {'lygndi'}
+1 	 2	 sía	 2 	 {'síaðist'}
+1 	 2	 gufa	 1 	 {'gufaði'}
+1 	 S	 ofbjóða	 1 	 {'ofbauð'}
+1 	 1	 skeytta	 243 	 {'skeytti'}
+1 	 2	 hoppa	 1 	 {'hoppaði'}
+1 	 1	 tróna	 1 	 {'tróndi'}
+1 	 2	 verzla	 24 	 {'verzlaði'}
+1 	 2	 versna	 24 	 {'versnaði'}
+1 	 1	 herpa	 24 	 {'herptist'}
+1 	 2	 raska	 1 	 {'raskaðist'}
+1 	 2	 rakna	 1 	 {'raknaði'}
+1 	 S	 staðráða	 1 	 {'staðréð'}
+1 	 2	 rýrna	 2 	 {'rýrnuðu'}
+1 	 2	 glata	 1 	 {'glataði'}
+1 	 1	 yrða	 24 	 {'yrti'}
+1 	 2	 korra	 1 	 {'korraði'}
+1 	 2	 fussa	 1 	 {'fussaði'}
+1 	 1	 hrækja	 j23 	 {'hrækti'}
+1 	 2	 lötra	 1 	 {'lötraði'}
+1 	 2	 hjala	 1 	 {'hjöluðum'}
+1 	 2	 veina	 24 	 {'veinaði'}
+1 	 S	 fjúka	 1 	 {'fuku'}
+1 	 2	 borða	 1 	 {'borðuðum'}
+1 	 2	 eitra	 24 	 {'eitruðu'}
+1 	 2	 hvoma	 1 	 {'hvomaði'}
+1 	 2	 fossa	 1 	 {'fossaði'}
+1 	 2	 hlýna	 2 	 {'hlýnaði'}
+1 	 2	 raða	 1 	 {'raðaði'}
+1 	 1	 skrölta	 1 	 {'skröltu'}
+1 	 2	 vætla	 23 	 {'vætlaði'}
+1 	 1	 píra	 2 	 {'pírði'}
+1 	 2	 teikna	 24 	 {'teiknuðu'}
+1 	 2	 prófa	 1 	 {'prófaði'}
+1 	 S	 gulla	 1 	 {'gullu'}
+1 	 2	 vá	 0 	 {'váuðu'}
+1 	 S	 hlypa	 24 	 {'hlypi'}
+1 	 2	 rotta	 1 	 {'rottuðu'}
+1 	 2	 fitla	 24 	 {'fitlaði'}
+1 	 1	 sletta	 24 	 {'slettu'}
+1 	 1	 sperra	 24 	 {'sperrti'}
+1 	 2	 dragna	 1 	 {'dragnaði'}
+1 	 2	 kjaga	 1 	 {'kjagaði'}
+1 	 S	 nera	 24 	 {'nerum'}
+1 	 2	 sturta	 1 	 {'sturtaði'}
+1 	 1	 fýsa	 2 	 {'fýsti'}
+1 	 2	 stæla	 23 	 {'stælti'}
+1 	 2	 hjúfra	 1 	 {'hjúfruðu'}
+1 	 2	 hýrga	 2 	 {'hýrgaði'}
+1 	 1	 þynna	 24 	 {'þyntist'}
+1 	 2	 romsa	 1 	 {'romsaði'}
+1 	 2	 rata	 1 	 {'rataði'}
+1 	 2	 þvaðra	 1 	 {'þvaðraði'}
+1 	 S	 $búa	 1 	 {'$bjó'}
+1 	 2	 efa	 24 	 {'efaðist'}
+1 	 1	 svipta	 24 	 {'svipti'}
+1 	 1	 tárfella	 124 	 {'tárfelldu'}
+1 	 2	 þreifa	 24 	 {'þreifaði'}
+1 	 2	 tímga	 2 	 {'tímgaðist'}
+1 	 2	 þukla	 1 	 {'þuklaði'}
+1 	 S	 drjúpa	 1 	 {'draup'}
+1 	 S	 sveipa	 24 	 {'sveipaði'}
+1 	 2	 krumpa	 1 	 {'krumpuðust'}
+1 	 1	 tylla	 24 	 {'tyllti'}
+1 	 1	 seiða	 24 	 {'seiddi'}
+1 	 1	 dreita	 24 	 {'dreitti'}
+1 	 1	 vitja	 j24 	 {'vitjaði'}
+1 	 2	 bóla	 1 	 {'bólaði'}
+1 	 1	 þekja	 j24 	 {'þakti'}
+1 	 1	 ranghvolfa	 1 	 {'ranghvolfdi'}
+1 	 2	 ýskra	 2 	 {'ýskraði'}
+1 	 2	 ávarpa	 1 	 {'ávörpuðum'}
+1 	 1	 pæla	 23 	 {'pældu'}
+1 	 1	 knúða	 1 	 {'knúðu'}
+1 	 2	 böðla	 1 	 {'böðlaðist'}
+1 	 S	 stígja	 j2 	 {'stígi'}
+1 	 2	 buna	 1 	 {'bunaði'}
+1 	 2	 fölna	 1 	 {'fölnaði'}
+1 	 2	 dökkna	 1 	 {'dökknuðu'}
+1 	 S	 míga	 2 	 {'meig'}
+1 	 1	 hugleiða	 124 	 {'hugleiddi'}
+1 	 S	 gá	 0 	 {'gáði'}
+1 	 1	 roðfletta	 124 	 {'roðflettum'}
+1 	 S	 gagntaka	 1 	 {'gagntók'}
+1 	 2	 stroka	 1 	 {'strokaðist'}
+1 	 2	 prjóna	 1 	 {'prjónaði'}
+1 	 1	 hægja	 j23 	 {'hægði'}
+1 	 2	 snarstoppa	 1 	 {'snarstoppaði'}
+1 	 S	 sverfa	 24 	 {'svarf'}
+1 	 2	 tindra	 24 	 {'tindruðu'}
+1 	 2	 kjarna	 1 	 {'kjarnaðist'}
+1 	 1	 ginna	 24 	 {'ginnti'}
+1 	 2	 ansa	 1 	 {'ansaði'}
+1 	 2	 púa	 1 	 {'púaði'}
+1 	 2	 lasta	 1 	 {'lastaði'}
+1 	 1	 illmæla	 243 	 {'illmælti'}
+1 	 2	 sárlanga	 1 	 {'sárlangaði'}
+1 	 1	 tilkynna	 24 	 {'tilkynnti'}
+1 	 2	 naga	 1 	 {'nagaði'}
+1 	 2	 mislíka	 24 	 {'mislíkaði'}
+1 	 1	 hæða	 23 	 {'hæddu'}
+1 	 2	 svigna	 24 	 {'svignaði'}
+1 	 1	 endurheimta	 124 	 {'endurheimti'}
+1 	 2	 sveimérþáa	 124 	 {'sveimérþáaði'}
+1 	 2	 skrjáfa	 1 	 {'skrjáfaði'}
+1 	 2	 hlægja	 j23 	 {'hlægði'}
+1 	 1	 gylta	 24 	 {'gylti'}
+1 	 2	 kvonga	 1 	 {'kvongaðist'}
+1 	 2	 vippa	 24 	 {'vippaði'}
+1 	 1	 flæma	 23 	 {'flæmdu'}
+1 	 2	 silfra	 24 	 {'silfraði'}
+1 	 2	 slaka	 1 	 {'slökuðu'}
+1 	 1	 fetta	 24 	 {'fettu'}
+1 	 1	 girða	 24 	 {'girti'}
+1 	 2	 grófflokka	 1 	 {'grófflokkuðu'}
+1 	 1	 keðjureykja	 1j243 	 {'keðjureyktu'}
+1 	 2	 hópa	 1 	 {'hópuðust'}
+1 	 1	 myrða	 24 	 {'myrti'}
+1 	 S	 rjúfa	 1 	 {'rauf'}
+1 	 2	 sundla	 1 	 {'sundlaði'}
+1 	 1	 riða	 24 	 {'riðaði'}
+1 	 S	 handleika	 124 	 {'handlék'}
+1 	 2	 titla	 24 	 {'titlaði'}
+1 	 1	 hugða	 1 	 {'hugðu'}
+1 	 2	 vitna	 24 	 {'vitnaði'}
+1 	 2	 töfra	 1 	 {'töfraði'}
+1 	 2	 syfja	 j24 	 {'syfjaði'}
+1 	 1	 greina	 24 	 {'greindi'}
+1 	 1	 hressa	 24 	 {'hressti'}
+1 	 1	 sigla	 24 	 {'sigldu'}
+1 	 2	 sýsla	 2 	 {'sýslaði'}
+1 	 2	 blossa	 1 	 {'blossaði'}
+1 	 1	 brölta	 1 	 {'brölti'}
+1 	 2	 snarþagna	 1 	 {'snarþagnaði'}
+1 	 1	 leiðbeina	 24 	 {'leiðbeindi'}
+1 	 2	 grenja	 j24 	 {'grenjaði'}
+1 	 S	 hlaða	 1 	 {'hlóðust'}
+1 	 2	 messa	 24 	 {'messaði'}
+1 	 2	 stokka	 1 	 {'stokkaði'}
+1 	 2	 megra	 24 	 {'megraðist'}
+1 	 1	 geyma	 243 	 {'geymdi'}
+1 	 2	 lyppa	 24 	 {'lyppaðist'}
+1 	 2	 bakka	 1 	 {'bakkaði'}
+1 	 1	 hellirigna	 24 	 {'hellirigndi'}
+1 	 2	 brúka	 1 	 {'brúkaði'}
+1 	 2	 tútna	 1 	 {'tútnaði'}
+1 	 2	 hitna	 24 	 {'hitnaði'}
+1 	 2	 rixa	 24 	 {'rixaði'}
+1 	 S	 núa	 1 	 {'neri'}
+1 	 2	 sárbölva	 1 	 {'sárbölvuðu'}
+1 	 2	 túlka	 1 	 {'túlkaði'}
+1 	 2	 þiðna	 24 	 {'þiðnaði'}
+1 	 S	 fyrirverða	 24 	 {'fyrirvarð'}
+1 	 2	 baka	 1 	 {'bökuðust'}
+1 	 1	 þenja	 j24 	 {'þandi'}
+1 	 2	 skima	 24 	 {'skimaði'}
+1 	 2	 raula	 1 	 {'raulaði'}
+1 	 2	 afla	 1 	 {'aflaði'}
+1 	 2	 lækka	 23 	 {'lækkaði'}
+1 	 1	 hagræða	 123 	 {'hagræddi'}
+1 	 2	 tifa	 24 	 {'tifaði'}
+1 	 2	 narta	 1 	 {'nartaði'}
+1 	 2	 spúla	 1 	 {'spúlaði'}
+1 	 2	 tóna	 1 	 {'tónaði'}
+1 	 2	 skíðloga	 12 	 {'skíðlogaði'}
+1 	 2	 batna	 1 	 {'batnaði'}
+1 	 S	 gjalda	 1 	 {'galt'}
+1 	 2	 skammta	 1 	 {'skammtaði'}
+1 	 2	 anda	 1 	 {'andaðist'}
+1 	 2	 arga	 1 	 {'argaði'}
+1 	 S	 krossbrá	 1 	 {'krossbrá'}
+1 	 2	 geisla	 24 	 {'geislaði'}
+1 	 2	 dauðskamma	 1 	 {'dauðskammaðist'}
+1 	 1	 beygja	 j243 	 {'beygði'}
+1 	 2	 smakka	 1 	 {'smakkaði'}
+1 	 S	 eftirláta	 124 	 {'eftirlét'}
+1 	 1	 samræma	 123 	 {'samræmdist'}
+1 	 2	 jafna	 1 	 {'jafnaði'}
+1 	 1	 merja	 j24 	 {'mörðu'}
+1 	 1	 tjá	 0j 	 {'tjáði'}
+1 	 2	 hlakka	 1 	 {'hlökkuðu'}
+1 	 1	 háða	 1 	 {'háði'}
+1 	 1	 klúka	 1 	 {'klúkti'}
+1 	 2	 hóa	 1 	 {'hóaði'}
+1 	 1	 ugga	 1 	 {'uggði'}
+1 	 1	 sætta	 23 	 {'sættust'}
+1 	 2	 þjaka	 1 	 {'þjakaði'}
+1 	 S	 flá	 0 	 {'fláði'}
+1 	 S	 sváfa	 1 	 {'sváfum'}
+1 	 2	 trosna	 1 	 {'trosnuðu'}
+1 	 S	 skáskjóta	 1 	 {'skáskaut'}
+1 	 2	 vappa	 1 	 {'vöppuðu'}
+1 	 1	 glymja	 j24 	 {'glumdi'}
+1 	 2	 undra	 1 	 {'undraðist'}
+1 	 2	 klofa	 1 	 {'klofaði'}
+1 	 S	 misfalla	 124 	 {'misfélli'}
+1 	 2	 þökka	 1 	 {'þökkuðu'}
+1 	 S	 meta	 24 	 {'mat'}
+1 	 2	 rissa	 24 	 {'rissuðu'}
+1 	 1	 gróðursetja	 1j24 	 {'gróðursettum'}
+1 	 2	 dreyrroðna	 1243 	 {'dreyrroðnaði'}
+1 	 1	 sérhæfa	 23 	 {'sérhæfði'}
+1 	 1	 kippaa	 124 	 {'kipptist'}
+1 	 1	 daufheyra	 1243 	 {'daufheyrðist'}
+1 	 2	 kólna	 1 	 {'kólnaði'}
+1 	 1	 spilla	 24 	 {'spiltu'}
+1 	 S	 endastinga	 124 	 {'endastakkst'}
+1 	 2	 bölva	 1 	 {'bölvaði'}
+1 	 2	 ragna	 1 	 {'ragnaði'}
+1 	 2	 hnoða	 1 	 {'hnoðuðu'}
+1 	 1	 byrta	 24 	 {'$byrtu'}
+1 	 2	 garga	 1 	 {'gargaði'}
+1 	 S	 smjúga	 1 	 {'smugu'}
+1 	 2	 spegla	 24 	 {'speglaði'}
+1 	 2	 hækka	 23 	 {'hækkuðu'}

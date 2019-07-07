@@ -44,7 +44,7 @@ def create_dataset(fname):
                     inflforms[verb] = set()
                 inflforms[verb].add(match.group(1).lower())
 
-    sortedverbs = sorted(verbcounts.items(), key=lambda x: x[1], reverse=True)[0:500]
+    sortedverbs = sorted(verbcounts.items(), key=lambda x: x[1], reverse=True)
     for verb, count in sortedverbs:
         forms = inflforms[verb]
         vtype = ""
@@ -71,7 +71,7 @@ def create_dataset(fname):
             classes.add("0")
         if verb[-2] == "j":
             classes.add("j")
-        print(vtype + "\t", verb + "\t", "".join(classes), "\t", inflforms[verb])
+        print(count, "\t", vtype + "\t", verb + "\t", "".join(classes), "\t", inflforms[verb])
 
 
 
@@ -81,8 +81,8 @@ def merge_vtypes(labfname, unlabfname):
     with open(labfname, "r") as f:
         for line in f:
             components = line.split("\t")
-            vtype = components[0].strip()
-            lemma = components[-2].strip()
+            vtype = components[1].strip()
+            lemma = components[-3].strip()
             generalizations = components[-1].strip()
             lemmas_to_vtypes[lemma] = vtype
 
@@ -90,8 +90,9 @@ def merge_vtypes(labfname, unlabfname):
         for line in f:
             components = line.split("\t")
             vtype = ""
-            if len(components) == 4:
-                vtype = components[0].strip()
+            count = components[0].strip()
+            if len(components) == 5:
+                vtype = components[1].strip()
                 if len(vtype) > 1:
                     vtype = ""
             lemma = components[-3].strip()
@@ -105,7 +106,9 @@ def merge_vtypes(labfname, unlabfname):
 #                    print("\tdun got ", lemma, vtype)
 #                else:
 #                    print("never got ", lemma)
-            print(vtype + "\t", lemma + "\t", "".join(generalizations), "\t", infls)
+            print(count, "\t", vtype + "\t", lemma + "\t", "".join(generalizations), "\t", infls)
 
 #create_dataset(sys.argv[1])
-merge_vtypes("oldis_input.txt", "unlabmodis.txt")
+#merge_vtypes("modis_input.txt", "def.txt")
+merge_vtypes("modis_input.txt", "def.txt")
+#merge_vtypes("oldis_input.txt", "unlabmodis.txt")

@@ -5,25 +5,39 @@ from os import listdir
 from os.path import isfile, join
 import sys
 
-infname = sys.argv[1]
+infnames = ["oldis_input.txt", "modis_input.txt"]
+outfname = sys.argv[1]
+
+def get_vtypecnts_by_gen(verbgens, verbtypes):
+    vtypecnts_by_gen = {}
+    for verb, gens in verbgens.items():
+        for gen in gens:
+            if gen not in vtypecnts_by_gen:
+                vtypecnts_by_gen[gen] = {}
+            vtype = verbtypes[verb]
+            if vtype not in vtypecnts_by_gen[gen]:
+                vtypecnts_by_gen[gen][vtype] = 0
+            vtypecnts_by_gen[gen][vtype] += 1
+    return vtypecnts_by_gen
+
 
 def read_verbfile(infname, maxverbs=100000):
-    vtypecnts_by_gen = {}
+    verbcounts = {}
+    verbtypes = {}
+    verbgens = {}
     with open(infname, "r") as fin:
         for i, line in enumerate(fin):
             if i == maxverbs:
                 break
             components = line.split()
-            vtype = components[0].strip()
-            lemma = components[1].strip()
-            generalizations = set(components[2].strip())
-            for gen in generalizations:
-                if gen not in vtypecnts_by_gen:
-                    vtypecnts_by_gen[gen] = {}
-                if vtype not in vtypecnts_by_gen[gen]:
-                    vtypecnts_by_gen[gen][vtype] = 0
-                vtypecnts_by_gen[gen][vtype] += 1
-    return vtypecnts_by_gen
+            count = int(components[0].strip())
+            vtype = components[1].strip()
+            lemma = components[2].strip()
+            generalizations = set(components[3].strip())
+            verbcounts[lemma] = count
+            verbtypes[lemma] = vtype
+            verbgens[lemma] = generalizations
+    return verbcounts, verbtypes, verbgens
 
 
 def calc_tp(N,e):
@@ -44,13 +58,14 @@ def do_nonsample_calcs(vtypecnts_by_gen):
             print("\t", vtype, N, e, round(theta,2), "\t", tolerable)
     print("")
 
-for i in range(50,550,50):
-    print()
-    print()
-    print(i)
-    vtypecnts_by_gen = read_verbfile(infname, i)
-    do_nonsample_calcs(vtypecnts_by_gen)
-exit()
+#for i in range(50,750,50):
+#    print()
+#    print()
+#    print(i)
+#    verbcounts, verbtypes, verbgens = read_verbfile(infname, i)
+#    vtypecnts_by_gen = get_vtypecnts_by_gen(verbgens)
+#    do_nonsample_calcs(vtypecnts_by_gen)
+#exit()
 
 
 def get_sample(lemmalist, samplesize):
@@ -90,43 +105,56 @@ def write_samples(lemmafreqs, samplesizes, numsamples, outprefix):
                     fout.write(lemma + "\t" + str(freq) + "\n")
                     
 
-verbcounts = {}
-inflforms = {}
-add_verbcounts(infname, verbcounts, inflforms)
-#print(len(verbcounts), verbcounts)
-sortedverbs = sorted(verbcounts.items(), key=lambda x: x[1], reverse=True)
-print(len(sortedverbs), len(remove_nonja(sortedverbs, False)))
 
 
 with open(outfname, "w") as fout:
-    fout.write("TOTAL" +"\t"+ "SHORTONLY" +"\t"+ "TYPE" +"\t"+ "VAL" +"\t"+ "tolerable" + "\n")
-    sumsj = 0
-    sumsr = 0
+    fout.write("ERA" + "\t" + "TOTAL" +"\t"+ "GEN" +"\t"+ "TYPE" +"\t"+ "VAL" +"\t"+ "tolerable" + "\n")
+    for infname in infnames:
+        verbcounts, verbtypes, verbgens = read_verbfile(infname)
+        sortedverbs = sorted(verbcounts.items(), key=lambda x: x[1], reverse=True)
+        types = set()
+        gens = set()
+        for verb, vgens in verbgens.items():
+            for gen in vgens:
+                gens.add(gen)
+        for verb, vtype in verbtypes.items():
+            types.add(vtype)
 
-    for samplenum in range(0,1000):
-        print("sampling", samplenum)
-        sampledverbs = make_sample(sortedverbs,1000)
-#        print(sampledverbs)
-        sortedsampledverbs = sorted(sampledverbs.items(), key=lambda x: x[1], reverse=True)
-#        sortedsampledverbs = sortedverbs[0:1000]
-        incr = 50
-        for i in range(0,2000+incr,incr):
-            sv = sortedsampledverbs[0:min(i,len(sortedsampledverbs))]
-            if i > len(sortedsampledverbs):
-                break
-#            print(len(sv), end="\t")
-            for shortonly in (True, False):
-                sj = remove_nonja(sv, shortonly)
-                sortedregulars = remove_irreg(sj, shortonly)
-                if len(sj)-len(sortedregulars):
-                    N, e, theta, tolerable = calc_tp(len(sj), len(sj)-len(sortedregulars))
-                    fout.write(str(len(sv)) +"\t"+ str(shortonly).upper() +"\t"+str("theta") +"\t"+ str(theta) +"\t"+ str(tolerable).upper() + "\n")
-                elif i == 0:
-                    fout.write("0" +"\t"+ str(shortonly).upper() +"\t"+ "theta" +"\t"+ "0" +"\t"+ "FALSE" + "\n")
-            if i == 1000:
-                sumsj += len(sj)/100
-                sumsr += len(sortedregulars)/100
-    print(sumsj, sumsr, sumsj-sumsr, sumsj/log(sumsj))
+        print(len(sortedverbs))#, len(remove_nonja(sortedverbs, False)))
+        print(types)
+        print(gens)
 
-#for verb in maybeja:
-#    print(verb, inflforms[verb])
+        for samplenum in range(0,1000):
+            print("sampling", samplenum)
+            sampledverbs = make_sample(sortedverbs,700)
+    #        print(sampledverbs)
+            sortedsampledverbs = sorted(sampledverbs.items(), key=lambda x: x[1], reverse=True)
+    #        sortedsampledverbs = sortedverbs[0:1000]
+            incr = 50
+            for i in range(0,700+incr,incr):
+                sv = dict(sortedsampledverbs[0:min(i,len(sortedsampledverbs))])
+                if i > len(sortedsampledverbs):
+                    break
+                svgens = {}
+                for verb in sv:
+                    svgens[verb] = verbgens[verb]
+                vtbyg = get_vtypecnts_by_gen(svgens,verbtypes)
+                for gen, tcnts in vtbyg.items():
+                    for t, tcnt in tcnts.items():
+                        N, e, theta, tolerable = calc_tp(tcnt, sum(tcnts.values())-tcnt)
+                        fout.write(infname + "\t" + str(len(sv)) +"\t"+ gen +"\t"+ t +"\t"+ str(theta) +"\t"+ str(tolerable).upper() + "\n")
+    #            for shortonly in (True, False):
+    #                sj = remove_nonja(sv, shortonly)
+    #                sortedregulars = remove_irreg(sj, shortonly)
+    #                if len(sj)-len(sortedregulars):
+    #                    N, e, theta, tolerable = calc_tp(len(sj), len(sj)-len(sortedregulars))
+    #                    fout.write(str(len(sv)) +"\t"+ str(shortonly).upper() +"\t"+str("theta") +"\t"+ str(theta) +"\t"+ str(tolerable).upper() + "\n")
+    #                elif i == 0:
+    #                    fout.write("0" +"\t"+ str(shortonly).upper() +"\t"+ "theta" +"\t"+ "0" +"\t"+ "FALSE" + "\n")
+    #            if i == 1000:
+    #                sumsj += len(sj)/100
+    #                sumsr += len(sortedregulars)/100
+    #    print(sumsj, sumsr, sumsj-sumsr, sumsj/log(sumsj))
+
+    #for verb in maybeja:
+    #    print(verb, inflforms[verb])
