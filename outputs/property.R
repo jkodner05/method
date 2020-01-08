@@ -3,7 +3,7 @@ library(ggplot2)
 library(ggsignif)
 
 
-properties = c("latinate","doubleobjalternators", "irregularverbs")
+properties = c("latinate","strongverbs","doubleobj","doubleobjalternators", "irregularverbs")
 
 
 plotproperties = function(property){
@@ -43,6 +43,19 @@ q <- ggplot(data, aes(x = is_adult, y = typecount, color=factor(is_adult)),
             add = "jitter") + geom_boxplot() + scale_colour_manual(values=c("#E69F00", "#56B4E9"), labels=c("CHILDES", "COCA")) 
 q + facet_grid(cols = vars(lexsize)) + labs(color='Corpus Type') +xlab("Genre") +ylab("# Expressing Property") 
   
+#  ggsave(paste("~/Downloads/outputs/cdsprop_",property,".png", sep=""),
+#         scale = 1, width = 8, height = 4, units = "in")
+  
+  #r <- ggplot(data, aes(x = is_nonacad, y = typecount, color=factor(is_nonacad)),
+  #            add = "jitter") + geom_boxplot() 
+  #r + scale_colour_manual(values=c("#999999", "#56B4E9")) + facet_grid(cols = vars(lexsize)); 
+  #ggsave("~/Downloads/outputs/acadproperty.png",
+  #       scale = 1, width = 8, height = 4, units = "in")
+  
+
+#  data$genre <- relevel(data$genre, ref = "acad")
+#  model.lm <- lm(typecount ~ genre, data = subdata)
+#  summary(model.lm)
 }
 
 for (property in properties){

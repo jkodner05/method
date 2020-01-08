@@ -40,5 +40,5 @@ levels(data$comptype) = c("CDS and COCA Genre","COCA Inter-Genre")
   
 
   ggsave(paste("~/Documents/Research/Misc/methods/outputs/allsim.png", sep=""),
-       scale = 1, width = 8, height = 4, units = "in")
+       scale = 1, width = 6, height = 4, units = "in")
 
