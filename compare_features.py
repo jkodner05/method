@@ -22,7 +22,7 @@ def read_featured(featfname):
 def get_featuredcounts(lexicons, featureds):
     featuredcounts = {}
     for fname, lexicon in lexicons.items():
-        print(featureds)
+        print(lexicon & featureds)
         numfeatured = len(lexicon & featureds)
         featuredcounts[fname] = (numfeatured, len(lexicon)-numfeatured)
     return featuredcounts
