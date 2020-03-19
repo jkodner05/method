@@ -2,6 +2,7 @@ import argparse, re, os
 from os.path import basename
 from collections import defaultdict
 import statistics
+import numpy as np
 import matplotlib.pyplot as plt
 
 exclude_speakers = set(["CHI", "ROS", "DAV", "ARR", "DAN", "JEN"])
@@ -11,26 +12,33 @@ exclude_lemmas = set(["be","not","me","us","you","dog","house","eye","bowl","nos
 def plot_lemmas_by_numtypes(numtypes_by_lemma, outfname, language):
     numtypes_by_lemma = sorted(numtypes_by_lemma.items(), key=lambda kv: kv[1], reverse=True)
 
-    x = []
-    numbins = 0
-    for lemma, numtypes in numtypes_by_lemma:
-        if numtypes > 0:
-            x.extend([numbins]*numtypes)
-            numbins += 1
-
-    if numbins < 2:
-        return
-
+    y = [float(numtypes) for lemma, numtypes in numtypes_by_lemma if numtypes > 0]
     fig, ax = plt.subplots(figsize=(12,12))
-    n, bins, patches = ax.hist(x, numbins)
-    for i, patch in enumerate(patches):
-        patch.set_facecolor("goldenrod")
+    fig.set_dpi(300)
+    ax.bar(range(0,len(y)), y, width=1.0, color="goldenrod")
 
     fontsize = 40
-    fig.suptitle("CHILDES " + language, fontsize=40)
-    ax.tick_params(labelsize=20)
+    fig.suptitle("CHILDES " + language + " PS", fontsize=50)
+    ax.tick_params(labelsize=25)
     ax.set_xlabel('Ranked Lemmas', fontsize=fontsize)
-    ax.set_ylabel('Infl Form Type Count', fontsize=fontsize)
+    ax.set_ylabel('Infl. Form Type Count', fontsize=fontsize)
+    plt.savefig("outputs/" + outfname)
+    plt.close(fig)
+
+
+def plot_infls_by_numlemmas(numlemmas_by_infl, outfname, language):
+    numlemmas_by_infl = sorted(numlemmas_by_infl.items(), key=lambda kv: kv[1], reverse=True)
+
+    y = [float(numlemmas) for infl, numlemmas in numlemmas_by_infl if numlemmas > 0]
+    fig, ax = plt.subplots(figsize=(12,12))
+    fig.set_dpi(300)
+    ax.bar(range(0,len(y)), y, width=1.0, color="goldenrod")
+
+    fontsize = 40
+    fig.suptitle("CHILDES " + language + " IPS", fontsize=50)
+    ax.tick_params(labelsize=25)
+    ax.set_xlabel('Ranked Infl. Categories', fontsize=fontsize)
+    ax.set_ylabel('Lemma Count', fontsize=fontsize)
     plt.savefig("outputs/" + outfname)
     plt.close(fig)
 
@@ -131,6 +139,16 @@ def writeout(outfname, sortedtypes):
             f.write("%s\t%s\n" % (word, freq))
 
 
+def invert(morphsbytype):
+    numbyinfl = {}
+    for lemma, morphs in morphsbytype.items():
+        for morph in morphs:
+            infl = "-".join(morph.split("=")[0].split("-")[1:])
+            if infl not in numbyinfl:
+                numbyinfl[infl] = 0
+            numbyinfl[infl] += 1
+    return numbyinfl
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description = "Get type frequencies from Brown Corpus")
 
@@ -160,15 +178,20 @@ if __name__ == "__main__":
     print("# Tokens", sum(freqsbymorph.values()))
     print("# Types", len(sortedtypes))
     morphsbytype_noPOS = {lemma:set([morph.split("|")[1].replace("&","-") for morph in morphs]) for lemma, morphs in morphsbytype.items()}
+#    numbyinfl = invert(morphsbytype_noPOS)
     nummorphsbytype = {lemma:len(morphs) for lemma, morphs in morphsbytype_noPOS.items()}
-    print("Max", max(nummorphsbytype.values()))
-    print("Mean", statistics.mean(nummorphsbytype.values()))
-    print("Median", statistics.median(nummorphsbytype.values()))
-    plot_lemmas_by_numtypes(nummorphsbytype,basename(args.outfile).replace(".txt",".png"), args.language)    
+    print("Max PS", max(nummorphsbytype.values()))
+    print("Mean PS", statistics.mean(nummorphsbytype.values()))
+    print("Median PS", statistics.median(nummorphsbytype.values()))
+    plot_lemmas_by_numtypes(nummorphsbytype,basename(args.outfile).replace(".txt",".png"), args.language)
+    
 
 
     print("# Feats", len(lemmasbyfeat))
     numlemmasbyfeat = {feat:len(lemmas) for feat, lemmas in lemmasbyfeat.items()}
-    print("Max", max(numlemmasbyfeat.values()))
-    print("Mean", statistics.mean(numlemmasbyfeat.values()))
-    print("Median", statistics.median(numlemmasbyfeat.values()))
+#    print( {feat:lemmas for feat, lemmas in lemmasbyfeat.items()})
+    print("Num lemmas", len(nummorphsbytype))
+    print("Max IPS", max(numlemmasbyfeat.values()), max(numlemmasbyfeat.values())/len(nummorphsbytype))
+    print("Mean IPS", statistics.mean(numlemmasbyfeat.values())/len(nummorphsbytype))
+    print("Median IPS", statistics.median(numlemmasbyfeat.values())/len(nummorphsbytype))
+    plot_infls_by_numlemmas(numlemmasbyfeat,basename(args.outfile).replace(".txt","_IPS.png"), args.language)
